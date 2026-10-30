@@ -1,0 +1,11 @@
+Merge Bazaar level repair — DONE 2026-10-29
+Final level-design review: 8/10 (bar 8), 0 levels below 6/10 — level_design PASS, level_intents PASS, no_filler_levels PASS
+  (factory scripts/level-review.ts exit 0; verdict text in .design/review-round4.txt)
+Gates on the final set:
+  npx tsc --noEmit          → 0 errors
+  npm run validate          → exit 0, 64/64 solvable, no PROBLEM lines, difficulty early mean 49.8 → late mean 221.2 (x4.4)
+  npm run playtest          → L1-3 casual 100/97/91%; mid-third casual 0.828; last-third casual 0.648, skilled 0.900;
+                              easy (>=90%) share after L5 0.237, no run of 3, no spike > 35, no wall, rho -0.56, duplicates []
+                              (final JSON line copied to .agf/playtest.json — byte-identical to a fresh run)
+  npm run levels            → 12 s, 64 levels, no level capped (max explored 24,260 on L26; all others <= 15,189)
+Snapshots: .design/best-6.5 (start), best-7.0 (round 1), best-7.4 (round 3), best-8.0 (final = shipped).

@@ -1,0 +1,56 @@
+PASS level_intents: all 64 levels have a specific intent
+PASS no_filler_levels: no trivial filler levels after the tutorial
+FAIL level_design: level-design review 7.7/10 (bar 8), 2 level(s) below 6/10: A well-crafted, readable set with a strong 'aha' on most levels and clear intent-to-board truth. It is let down by overuse of the Big Merge and jar tricks, one casual spike (L19), one unfair-feeling trap level (L59), a weak chain-order teach (L57), a misplaced banner teach (L32) and a redundant breather (L23). The finale trio (L62-64) is excellent. Fixing about 8 levels would lift the set to a clear 8+. Curve: Strong: one idea per level, readable intents, and the board geometry (cell-next-to-jar, ring reach, fifth-piece traps) is checkable. The numbers mostly meet the studio targets. L1-3 are 100/97/93% casual. No run of three or more easy levels appears after L5. The last-third casual average is about 64-65%, which is on the limit but acceptable. Skilled rates stay inside 50-95% except a few breathers.
+
+Problems:
+1. Big Merge is overused as the one aha. It appears in about 13 levels (L8, 9, 10, 12, 13, 20, 24, 25, 37, 39, 46, 55, 59). L12 and L46 are near-duplicates: the same four-corner Brass layout and the same "don't build the fifth Brass" trap. Jars are used the same way in about 13 levels ("merge beside it"). Late levels feel like variations of one trick.
+2. L19 is a lone casual spike (62%) between 84% and 93% neighbours. It is a practise level inside the early-recipe stretch.
+3. L59 (trap rate 0.33, casual 40%) hides a fatal early move: pairing the waiting keys. It has zero Spark slack, so it feels like guessing.
+4. L57 teaches chain orders at 63% casual with no slack.
+5. L31 and L33 (masala teach and twist) are split by an unrelated L32 (banner).
+6. L23 is a 'breather' that mostly repeats L16 and L17 (Needle and a knotted generator).
+7. Chapter bosses are inconsistent. L13 is barely harder than L12 (87% vs 85% casual). L26, L39, L52 and L64 escalate properly.
+8. Boosters arrive in a sensible order (Fireworks L11, Needle L16, Sweep L47), but Sweep comes late. Several late levels give 6 Sparks while the optimal line uses 2 (L55, L47), which removes tension.
+9. Breathers at L34, L42, L48 and L60 are well placed after spikes. L48 sits directly after a teach and is a second jar breather close to L42.
+10. The finales (L62-64) are the best part of the set: they are dense, tell a story and test mastery. L64 is an excellent capstone.
+REDESIGN THESE LEVELS (keep the ones not listed):
+L19 (5/10): Casual 62% is a spike between 84% and 93%. 5 of 7 Sparks are used and a wrong dye is costly. It reads as a tax rather than a puzzle. → Raise the Sparks to 8 (or cost the Dye Stand 1 Spark here). Pre-place a second Dye Pot or one more spool. Target about 80% casual.
+L59 (5/10): Trap rate 0.33 and casual 40%/skilled 72%. Pairing the waiting keys is an early, unsignalled and unrecoverable move with a zero-slack budget. It feels like guessing. → Add a Spark (3) or cost the Key Smith 2. Pre-merge nothing, and show a ring around the four keys when the order card pays a key.
+L23 (6/10): It follows L21-22, which are not a real spike, and the Needle/knotted-generator idea was already done in L16-17. It adds nothing new and is 100% casual. → Move it after L25 or replace it with a gentle board that has a fun payoff, such as a Marigold garland rangoli. Keep it to one soft blocker.
+L32 (6/10): It splits the masala teach (L31) and twist (L33). The Garland is pre-built, so the lesson is a single drag. → Move it after L33. Replace the finished Garland with two Marigolds so a recipe-of-recipe actually requires building.
+L57 (6/10): A teach at 63% casual with zero slack (5/5) and 14 moves; the first reward-order should be gentle. → Cut it to one reward link and remove the Rangoli: Garland pays a key, the key opens a trunk with the Toran. Add 1 Spark.
+L1 (7/10): Trivial 3x3 with 7 empty cells; nothing to see but fine as a tutorial. → Pre-place one Clay Diya and a hand-pointer on the shelf, so the first tap and drag feel like discovery. Keep the board tiny.
+L3 (7/10): Three generators and two orders at level 3 is a heavy jump; the decoy tap is only a lesson in subtraction. → Drop the Sweet Kitchen decoy to level 4 or 5, and keep L3 to two generators with a second order. Raise the decoy's cost later.
+L13 (7/10): Casual 87% is no harder than L12 (85%); it feels like a puzzle, not a boss. Its Firework is the only new idea. → Add a second order that needs the pairs-first idea from L12 (for example a Brass Diya order), or cut the Spark budget to 3. Aim for roughly 70-75% casual.
+L14 (7/10): A 5x2 board with 1 Spark is cramped and the optimal path is nearly forced. → Use 5x3 and add an unrelated Clay Diya so the player may merge it beside the knot.
+L16 (7/10): Two knots and a floor knot 't:.' is hard to read, and a wasted Needle is recoverable, which softens the lesson. → Remove the floor knot. Make the cheap merge route cost 1 extra Spark, so the Needle visibly saves a Spark.
+L18 (7/10): The Dye Pot's cost is invisible, and the lesson 'keep the third spool' is a counting task rather than a discovery. → Add a decoy second Dye Pot or a spare spool so the player sees the cloth-vs-spool choice.
+L27 (7/10): Only 1 choice at the start, and the chilli decoys are the only teaching beyond the key. → Add a second generator or an order that makes the player choose which trunk to open first.
+L28 (7/10): Two decoy chilli trunks make it mostly a 'don't touch these' board. → Remove one chilli trunk. Make the waiting Brass Key sit away from the Marigold trunk to force a carry.
+L29 (7/10): The data is inconsistent (optimal 5 moves vs a stored 9-move proof). Casual 73% is high for a price-comparison puzzle. → Reconcile optimal-moves with the engine. Highlight the generator costs on the board. Add one Spark of slack.
+L38 (7/10): 14 moves on a 5x3 board is cramped, and the dye-counting puzzle is bookkeeping. → Widen to 5x4 and show the next queue item as a visible strip to keep the counting readable.
+L39 (7/10): Trap rate 0.25 with a zero-slack 5/5 Sparks; casual 53%. Pairing keys early is a hidden fatal move. → Add one spare Spark (6) or make the stall pepper free. Flag the five-key pattern with a dim ring on the keys.
+L40 (7/10): 100% casual; fine as a teach but the placement choice is signposted so heavily that there is no aha. → Add a second 'floor' option whose merges look equally natural. Leave out the text that tells the player to build beside the jar.
+L41 (7/10): A big jump from 100% to 72%. Two double-sealed jars plus a Big Merge alternative blur the lesson, and optimal (9) disagrees with the proof (10). → Drop the Big Merge option by using only 4 Clay Diyas and no 5th route, and fix the move count. Use a single-sealed jar pair if it still spikes.
+L43 (7/10): The stage-two Ghee Pot is already on the board and the lesson is mostly signposted. → Hide the Ghee Pot behind the Hearth queue so the player must plan the extra tap.
+L45 (7/10): Casual 61% with a three-step order. A recipe cracking a jar is a very unexpected rule at this point. → Teach 'recipes crack jars' in an earlier easy level, or add one Spark of slack.
+L46 (7/10): Close to a repeat of L12's four-Brass fifth-piece trap, wrapped in a staged order. → Change the trap: put the fifth piece in a crate that only opens as a reward. Change the layout so it no longer matches L12.
+L47 (7/10): The 6-Spark budget (4 used) and the 13-move chain dilute the one-row aha. → Cut to 4 Sparks, remove a jar and keep 3 orders at most.
+L48 (7/10): The second jar breather (L42), straight after the Sweep teach. It is 100% easy and the Flower Basket is a pure decoy. → Drop the generator. Give the jar a different hold (a Silver Key) so it is a unique breather.
+L51 (7/10): Casual 53% for a rule twist that is easy to miss; the jar-crack count is hard to verify. → Show a 'Pongal needed x2' counter on the card, and add one Spark of slack.
+L55 (7/10): 6 Sparks with a 2-Spark optimum removes all tension; the intent says the clean line is two taps. → Cut to 3 Sparks so off-centre play costs something.
+
+level-design score 7.7/10 — A well-crafted, readable set with a strong 'aha' on most levels and clear intent-to-board truth. It is let down by overuse of the Big Merge and jar tricks, one casual spike (L19), one unfair-feeling trap level (L59), a weak chain-order teach (L57), a misplaced banner teach (L32) and a redundant breather (L23). The finale trio (L62-64) is excellent. Fixing about 8 levels would lift the set to a clear 8+.
+curve: Strong: one idea per level, readable intents, and the board geometry (cell-next-to-jar, ring reach, fifth-piece traps) is checkable. The numbers mostly meet the studio targets. L1-3 are 100/97/93% casual. No run of three or more easy levels appears after L5. The last-third casual average is about 64-65%, which is on the limit but acceptable. Skilled rates stay inside 50-95% except a few breathers.
+
+Problems:
+1. Big Merge is overused as the one aha. It appears in about 13 levels (L8, 9, 10, 12, 13, 20, 24, 25, 37, 39, 46, 55, 59). L12 and L46 are near-duplicates: the same four-corner Brass layout and the same "don't build the fifth Brass" trap. Jars are used the same way in about 13 levels ("merge beside it"). Late levels feel like variations of one trick.
+2. L19 is a lone casual spike (62%) between 84% and 93% neighbours. It is a practise level inside the early-recipe stretch.
+3. L59 (trap rate 0.33, casual 40%) hides a fatal early move: pairing the waiting keys. It has zero Spark slack, so it feels like guessing.
+4. L57 teaches chain orders at 63% casual with no slack.
+5. L31 and L33 (masala teach and twist) are split by an unrelated L32 (banner).
+6. L23 is a 'breather' that mostly repeats L16 and L17 (Needle and a knotted generator).
+7. Chapter bosses are inconsistent. L13 is barely harder than L12 (87% vs 85% casual). L26, L39, L52 and L64 escalate properly.
+8. Boosters arrive in a sensible order (Fireworks L11, Needle L16, Sweep L47), but Sweep comes late. Several late levels give 6 Sparks while the optimal line uses 2 (L55, L47), which removes tension.
+9. Breathers at L34, L42, L48 and L60 are well placed after spikes. L48 sits directly after a teach and is a second jar breather close to L42.
+10. The finales (L62-64) are the best part of the set: they are dense, tell a story and test mastery. L64 is an excellent capstone.

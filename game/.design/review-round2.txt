@@ -1,0 +1,80 @@
+PASS level_intents: all 64 levels have a specific intent
+PASS no_filler_levels: no trivial filler levels after the tutorial
+FAIL level_design: level-design review 7/10 (bar 8), 5 level(s) below 6/10: This is a strong, unusually well-documented set. Almost every level has a stated insight, and the best ones are memorable: L15 (junk pair vs needed pair), L39 (five keys Big-Merge into filigree plus silver), L42 (the jar holds a key), L62 (the cell you empty is where the next piece lands), and L61. The weaknesses fall into six groups.
+
+1) Big Merge is the crutch. It appears in about 15 levels (8, 9, 10, 12, 13, 20, 24, 25, 34, 37, 39, 41, 46, 55, 60) and keeps the same corner-plus-centre-generator layout.
+
+2) Several levels say one thing and the board says another. In these the intent text, the Spark budget and the proof disagree: L28 (a "third Spark" that doesn't exist), L29, L34 ("a Spark to spare" with 1/1 used), L48, L55 and L47. The wrong choice is often forgiven, so the aha is never enforced.
+
+3) A few early hidden-fatal moves, in L2, L17 and L20, rely on the one-step Undo to feel fair.
+
+4) Difficulty is lumpy. L21 and L24-L28 form a cluster of 55-60% casual wins around story and practise slots, and L59 is an isolated 46%/68% dip between 69% and 81% neighbours. L64 at 33% casual is a wall.
+
+5) Mechanic introduction is mostly sound, but staged, chain and mixed-recipe orders arrive at L44, L57 and L58. That leaves little practise time before the three finales.
+
+6) The doc promises a 7x9 board and unhurried play, but no level exceeds 7x7. Hard Spark budgets also read as pressure rather than coziness.
+
+The last-third casual average is about 65%, right at the ceiling. It is acceptable, but it leaves no headroom. Curve: Chapter structure (about 13 levels each, bosses at 13, 26, 39, 52 and 64) is clear. The order is mostly sound: generators and merge (1-3), crates (4-7), Big Merge (8-10), Fireworks (11), thread and Needle (14-17), recipes (18-22), trunks and keys (27-30), 3-input recipes (31-33), jars (40-43), staged orders (44-46), Sweep (47-48), wrapped trunks (53-54), mixed recipes (57), chain orders (58-61), then the finales.
+
+Problems:
+(a) L1-L13 is a long, near-flat run of 86-100% casual wins, with a weak boss at L13 (87%). The only spike is L11 (69%), a Fireworks teach with 20 start choices.
+(b) Big Merge is reused far too often and becomes the default aha. L12, L37 and L55 repeat "deliver or pair before the fifth piece arrives". L41, L43 and L52 repeat "one cell touches all the blockers". L20 and L26 share the same walled-corner geometry.
+(c) The L21-L28 stretch is bumpy. It runs 57%, 76%, 100%, 60%, 58%, 57%, 93%, 55%, with the lows at story or practise slots and the highs at breathers. Story beats should not be 58%. L28 follows a 93% teach with a 55% practise that introduces key merging.
+(d) Staged orders arrive late (L44), and mixed recipes (L57) and chain orders (L58) come very late. L57 and L58 are teaches played with zero Spark slack, at 71% and 69% casual, which is too harsh for a teach. The L62-L64 finales then test all of them at once.
+(e) L59 is an isolated difficulty dip (46%/68%) between 69% and 81% neighbours.
+(f) Breathers are inconsistent. L23, L34, L42 and L60 work. L29 and L48 don't (L48 is nearly identical to L47), and L35 (a story beat) is a free ride.
+(g) The last third averages about 65% casual, which is on target but at the ceiling. L64 at 33% casual is a wall for a grand finale; the whole set would feel better with the finale around 45%.
+(h) A fail state driven by a Spark budget sits awkwardly with the "unhurried, cozy" promise. Tight 5/5 and 3/3 budgets with no slack appear across L38, L46, L52, L57 and L58.
+REDESIGN THESE LEVELS (keep the ones not listed):
+L28 (4/10): Intent promises a third Spark forgiving a wasted key, but the board has 2 Sparks and 2/2 are used. Casual 55% and trap 0.33 follow a 93% teach, and key merging (new) is introduced in a practise slot. → Give 3 Sparks as the text says. Move key merging into a gentle teach, and drop the chilli trunk's tempting position.
+L17 (5/10): Intent says merging elsewhere ends the level before it starts, yet trap rate is 0 and casual is 67%. That is a hidden fatal early move, and 3 Sparks with an untappable loom is dead if a pair is wrongly merged. → Make it single-layer, or add a free spool-pair and a spare crate Spark so a wrong merge is recoverable. Mark the recoverability in the intent.
+L29 (5/10): The proof uses 4/5 Sparks, and the intent says 3 vs 4. With 5 Sparks both choices win, so the aha isn't enforced. It is a 'breather' at 95% right after a 55% level. → Set Sparks to 3 so only the Garland trunk key wins.
+L48 (5/10): Intent text is duplicated. Spare Sparks are claimed with 3/3 used. It is nearly the same as L47 and only slightly easier (87%). → Rewrite it. Make it truly easy: single-layer jars and 4 Sparks.
+L59 (5/10): Casual 46% and skilled 68% is an isolated dip between 69% and 81% neighbours. The Sari card opens only after the Dupatta, so wrong orders strand dye. → Show the next stage's inputs as a ghost, and cut the decoy key trunk.
+L5 (6/10): At 99% casual wins this is mostly busywork. It also repeats L4's crate logic. L4 to L6 are three levels at or above 90%. → Make the story beat the breather it claims to be but add one meaningful choice. For example, a Laddu already sits beside the crate so the opened Plate is optional, and tighten to 3 Sparks.
+L9 (6/10): Almost the same layout and flow as L8 (corners plus centre generator). The new insight is small. → Rebuild so the bonus matters elsewhere. For example, put 4 buds in non-corner positions and a Marigold across a row so the 5x5 ring hits a crate.
+L11 (6/10): 20 start choices, 10 crates and 69% casual is a spike for a teach in chapter 1. A burst on the corner wastes the Firework. → Show the 3x3 footprint preview and highlight the aimed area. Put more crates in the productive area and give 3 Sparks so every aim still wins.
+L19 (6/10): 9 Sparks with 5 used means the wrong play is forgiven; the 2-Spark price is never felt. → Cut to 6 Sparks so extra dye taps fail.
+L21 (6/10): 57% casual / 81% skilled with trap 0.25 is a steep jump from the 99% of L18-L20. The Dye Stand costs 2 on a 1-Spark budget, so it is a dead decoy. → Bring to 2 Sparks and show the knot-adjacent merge cell with a hint ring on first fail.
+L25 (6/10): 58% casual for a story beat, clustered between L24 (60%) and L26 (57%). It has 5 Sparks with only 2 used, so the difficulty is from invisibility rather than design. → Show the ring footprint on long-press. Make it a gentler story beat with 3 knots and 1 layer on the dye.
+L45 (6/10): Mostly L44 plus an L40 jar; low surprise. → Hide the Pongal's ghee generator behind a knot so the order forces thread and jar.
+L46 (6/10): Another Big Merge fifth-piece trick (L8, L9, L12). One start choice, 5/5 Sparks and 61% casual means there is no decision to make. → Replace with a distinct staged mechanic, or give a second route.
+L47 (6/10): The intent says to sweep the row with the most blockers, but only one row has any blockers. → Add a decoy second jar row so Sweep aim matters.
+L55 (6/10): The intent says the Sweet Kitchen buys back a mistake, but 2/2 Sparks are used, so it can't. A 7x5 board with 26 empty cells is wasteful; casual 71% for a story beat. → Shrink the board to 5x5 and give 3 Sparks.
+L1 (7/10): Fine and necessary, but zero choice and no spark of charm beyond Dadi's line. → Add a soft celebratory merge moment, with no board change needed.
+L2 (7/10): The decoy basket is a 50% fatal first move on a teach level with only 1 Spark; it relies on Undo. → Give 2 Sparks, so the decoy costs the efficiency star but doesn't end the level.
+L3 (7/10): Competent, but visually similar to L4 (Toran plus Garland again). → Make the second order a different chain, such as a Laddu Plate.
+L10 (7/10): Third Big Merge pattern in a row; the lamp crate decoy is thin. → Replace the lamp crate with a Laddu crate that is the trap, so the player must decide whether to open it before or after the merge.
+L12 (7/10): The stated fatal order isn't fatal. Deliver the extra Brass first and the level is still winnable, so the intent overstates the board. → Change the orders to Toran x2 plus a Mithai-tier order that no Brass can fill, or make the fifth Brass undeliverable (Brass order removed).
+L13 (7/10): 87% casual is not a boss, and L12 and L14 are 97-99%, so there is no peak. Fireworks aim, crates and Big Merge are combined well but too transparent. → Add one thread knot on the cluster edge, or cut to 3 Sparks, aiming for around 75% casual.
+L18 (7/10): Aha is mild and the 3 spools plus dye taps give little tension. → Add a decoy Dye Stand tap or a second order that forces the keep-one-spool insight harder.
+L20 (7/10): Great aha but a 50% hidden-fatal start (pair any bud first and the five never form). It also mirrors L9's content. → Add a spare Spark and an extra bud so one wrong pair is recoverable, and make L9 differ from this level.
+L23 (7/10): A Needle repeat; fine as a breather but only 100% easy. → None required; add a decorative flourish.
+L26 (7/10): Reuses L20's walled-corner geometry; 57% casual after two ~58% levels adds fatigue. → Vary the wall shape and move one easy level (a breather) before it.
+
+level-design score 7/10 — This is a strong, unusually well-documented set. Almost every level has a stated insight, and the best ones are memorable: L15 (junk pair vs needed pair), L39 (five keys Big-Merge into filigree plus silver), L42 (the jar holds a key), L62 (the cell you empty is where the next piece lands), and L61. The weaknesses fall into six groups.
+
+1) Big Merge is the crutch. It appears in about 15 levels (8, 9, 10, 12, 13, 20, 24, 25, 34, 37, 39, 41, 46, 55, 60) and keeps the same corner-plus-centre-generator layout.
+
+2) Several levels say one thing and the board says another. In these the intent text, the Spark budget and the proof disagree: L28 (a "third Spark" that doesn't exist), L29, L34 ("a Spark to spare" with 1/1 used), L48, L55 and L47. The wrong choice is often forgiven, so the aha is never enforced.
+
+3) A few early hidden-fatal moves, in L2, L17 and L20, rely on the one-step Undo to feel fair.
+
+4) Difficulty is lumpy. L21 and L24-L28 form a cluster of 55-60% casual wins around story and practise slots, and L59 is an isolated 46%/68% dip between 69% and 81% neighbours. L64 at 33% casual is a wall.
+
+5) Mechanic introduction is mostly sound, but staged, chain and mixed-recipe orders arrive at L44, L57 and L58. That leaves little practise time before the three finales.
+
+6) The doc promises a 7x9 board and unhurried play, but no level exceeds 7x7. Hard Spark budgets also read as pressure rather than coziness.
+
+The last-third casual average is about 65%, right at the ceiling. It is acceptable, but it leaves no headroom.
+curve: Chapter structure (about 13 levels each, bosses at 13, 26, 39, 52 and 64) is clear. The order is mostly sound: generators and merge (1-3), crates (4-7), Big Merge (8-10), Fireworks (11), thread and Needle (14-17), recipes (18-22), trunks and keys (27-30), 3-input recipes (31-33), jars (40-43), staged orders (44-46), Sweep (47-48), wrapped trunks (53-54), mixed recipes (57), chain orders (58-61), then the finales.
+
+Problems:
+(a) L1-L13 is a long, near-flat run of 86-100% casual wins, with a weak boss at L13 (87%). The only spike is L11 (69%), a Fireworks teach with 20 start choices.
+(b) Big Merge is reused far too often and becomes the default aha. L12, L37 and L55 repeat "deliver or pair before the fifth piece arrives". L41, L43 and L52 repeat "one cell touches all the blockers". L20 and L26 share the same walled-corner geometry.
+(c) The L21-L28 stretch is bumpy. It runs 57%, 76%, 100%, 60%, 58%, 57%, 93%, 55%, with the lows at story or practise slots and the highs at breathers. Story beats should not be 58%. L28 follows a 93% teach with a 55% practise that introduces key merging.
+(d) Staged orders arrive late (L44), and mixed recipes (L57) and chain orders (L58) come very late. L57 and L58 are teaches played with zero Spark slack, at 71% and 69% casual, which is too harsh for a teach. The L62-L64 finales then test all of them at once.
+(e) L59 is an isolated difficulty dip (46%/68%) between 69% and 81% neighbours.
+(f) Breathers are inconsistent. L23, L34, L42 and L60 work. L29 and L48 don't (L48 is nearly identical to L47), and L35 (a story beat) is a free ride.
+(g) The last third averages about 65% casual, which is on target but at the ceiling. L64 at 33% casual is a wall for a grand finale; the whole set would feel better with the finale around 45%.
+(h) A fail state driven by a Spark budget sits awkwardly with the "unhurried, cozy" promise. Tight 5/5 and 3/3 budgets with no slack appear across L38, L46, L52, L57 and L58.

@@ -1,0 +1,18 @@
+Merge Bazaar level repair — round 5, 2026-10-29
+Review scores (factory scripts/level-review.ts, fresh LLM verdict each run):
+  best-8.0 set (round 4):  8.0 (0 below 6) | 7.6 (4 below 6, coordinator run) | 7.0 (1 below 6)   avg 7.53
+  round-5 set:             7.6 (1 below 6, before L22 fix) | 7.5 (0 below 6) | 7.4 (0 below 6)  final-set avg 7.45
+  Kept the round-5 set (shipped; snapshot .design/best-7.5-round5): same score band within noise, but 0 levels below 6
+  on both runs of the final set vs 0/4/1 for best-8.0. Neither set clears 8.0 reliably — the review varies ±0.5 run to run.
+  Verdicts: .design/review-round5a/b/c.txt, .design/review-best8-rerun2.txt, coordinator run in review-round4-rerun.txt.
+Round-5 changes: Mela Banner teach moved to L32 (Dye Stand 2 Sparks, as everywhere); "Two tins" moved to L57 (late masala
+  practise); L10 new story (one Big Merge serves two neighbours, 4 Sparks, 89%); L48 free-play rangoli breather (no
+  blockers, 100%); L55 new twist (a Sweep opens the crate's fifth Plate and cracks the jars; Big Merge ring finishes them);
+  L9 2 Sparks; L19 9; L21 4; L22 2; L25 one knot → nearly-open jar; L28 second chilli trunk (78%); L29 proof now the
+  3-Spark plan; L45 no thread on the Hearth (3 Sparks, 61%); L6 4 Sparks; L59 + side Brass Diya order (57%, pays for L48).
+Gates on the shipped set:
+  tsc --noEmit → 0 errors
+  npm run validate → exit 0, 64/64 solvable, difficulty early 51.9 → late 227.3 (x4.4)
+  npm run playtest → L1-3 100/97/91%; mid 0.834; late casual 0.6465, late skilled 0.894; easy share 0.237, no run of 3,
+                     no spike, no wall, rho -0.585, no duplicates; .agf/playtest.json byte-identical to a fresh run
+  npm run levels → 15 s, nothing capped, max explored 24,260 (L26)

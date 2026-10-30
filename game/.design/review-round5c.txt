@@ -1,0 +1,178 @@
+PASS level_intents: all 64 levels have a specific intent
+PASS no_filler_levels: no trivial filler levels after the tutorial
+FAIL level_design: level-design review 7.4/10 (bar 8), 0 level(s) below 6/10:  Curve: Strong spine. Mechanics arrive one at a time, in chapters of 13 with a boss at L13, L26, L39, L52 and L64, and breathers at L23, L34, L42, L48 and L60. The tutorial ramp is clean: merge, generator and decoy, crate, Big Merge, Fireworks, thread, Needle, recipes, trunks, 3-input recipes, jars, Sweep, staged and chain orders.
+
+Problems:
+1) Order breaks. Jars appear in L25 inside a Story/Combine level (jar plus thread plus Big Merge), but the Jar teach is L40. L40 is a 100%-win teach that arrives 15 levels late. L14 (thread) and L53 (wrapped trunk) are the right model.
+2) Template fatigue. "Four items in the corners, the generator in the centre, tap once for five, then Big Merge" is the same board in L8, L9, L10, L24, L25, L41 and L46. Big Merge is the set's signature trick, and it is used as a reflex.
+3) Early spike. L6 is a Practise level at 71% casual with zero Spark slack, straight after a 99% level.
+4) Tight Sparks. Late levels often use 100% of the Sparks (L44, L45, L46, L49, L51, L52, L58, L64), so a single wrong tap loses. That is acceptable for the finales but not for the teach and practise levels.
+5) Board size. Almost every board is 5x4 or smaller, even though the shipped board is 7x9. Only L62 and L64 use a real board, and only L62 tests crowding. The Bag, Sort and Undo systems are never exercised.
+6) Difficulty targets: L1-3 casual wins are 100/97/91 (pass). The last-third casual average is about 64.8% (pass, but only just). No easy streak breaks the rules. L39, the Chapter 3 boss, is too easy at 81% and has too much slack. L57 is filler.
+7) Late levels (L44-L64) are consistently strong. The best are L25, L29, L35, L37, L42, L50, L55 and L62.", "summary": "A thoughtful, well-signposted puzzle set with real aha moments. Almost every level has a single named idea and a decoy that punishes the obvious move. Teach, Practise, Twist and Combine are clearly separated, and the writing is warm and culturally specific. The set's strongest quality is levels where the same cell, key or bonus piece is reused cleverly (L29, L35, L37, L42, L50, L55, L62).
+
+Weaknesses:
+1) The "tap to five, then Big Merge" template is overused.
+2) Jar mechanics appear in L25 before the L40 jar teach.
+3) Several teach and practise levels have no Spark slack (L6, L16, L44, L45).
+4) L39 (boss) and L57 are soft or filler.
+5) Board footprints are nearly all small and tidy, so the Bag, Sort and full-board systems from the design doc are barely tested outside L62 and L64.
+6) Bot win rates fit the targets, but only barely (last third about 64.8%).
+
+Overall: solid, shippable after fixing the jar ordering, loosening L6 and L16, adding variety to the Big Merge cluster, and replacing L57.", "levels": [
+{"n":1,"rating":7,"purpose":"Teach merge: two equal items become the next tier.","problem":"Fine and tiny. Single choice, so there is no decision, but that is right for a first-run level.","fix":"Optional: make the board 4x4 or add a decorative lamp shelf so it feels like a room, not a test cell."},
+{"n":2,"rating":7,"purpose":"Teach a two-step chain, with the basket as a decoy.","problem":"Solid, but the decoy basket in level 2 is slightly early. The intent matches the board.","fix":"Keep it. Consider showing the Toran recipe preview automatically on a long-press."},
+{"n":3,"rating":7,"purpose":"Teach reading the order tray with three generators, one of them wasted.","problem":"Good intent. The 13-move optimal path is long for a third level, and one wasted tap is forgiven, so the lesson is soft.","fix":"Trim the board to 4x4 and cut the Sparks to 5 so the one-waste rule still bites."},
+{"n":4,"rating":8,"purpose":"Teach that a crate is worth what its lid shows.","problem":"","fix":""},
+{"n":5,"rating":6,"purpose":"Story beat with a count-the-board lesson.","problem":"A story beat carrying no new idea. It repeats L4's crate-value lesson, 99% casual, and the 5x5 board has 18 empty cells, so the space is wasted.","fix":"Make the story beat a moment: a 4x4 board with a Dadi-letter item that must be delivered, or drop the crate and use one tap-or-leftover choice."},
+{"n":6,"rating":6,"purpose":"Practise splitting pieces to fit orders.","problem":"Spike: 71% casual straight after 99%. All 4 Sparks are needed with zero slack. The aha (don't over-merge) is good, but one slip loses at level 6.","fix":"Give 5 Sparks, or pre-place a second Brass Diya. Keep the order set."},
+{"n":7,"rating":8,"purpose":"Practise reading the generator's visible queue.","problem":"","fix":""},
+{"n":8,"rating":8,"purpose":"Teach Big Merge by making five of a kind.","problem":"","fix":""},
+{"n":9,"rating":7,"purpose":"Practise Big Merge, with the bonus used as a partner.","problem":"Same board shape as L8, right after it. The new aha (the bonus as a partner) is real but small.","fix":"Offset the corners and add a bare-ground cell so the player has to choose where to land the Big Merge."},
+{"n":10,"rating":8,"purpose":"Story hand-off: one Big Merge pays two neighbours.","problem":"","fix":""},
+{"n":11,"rating":7,"purpose":"Teach Fireworks: aim for the 3x3 that covers the most.","problem":"20 starting choices is overwhelming for a teach. A 0.08 trap rate is tolerable, but the lid-reading aha is buried in noise.","fix":"Reduce to about 7 crates so the right aim is findable by looking, not by counting."},
+{"n":12,"rating":8,"purpose":"Twist: five of a kind always Big-Merges, so merge your pairs first.","problem":"","fix":""},
+{"n":13,"rating":7,"purpose":"Chapter 1 boss combining crates, Fireworks and Big Merge.","problem":"The optimal path uses 2 of 4 Sparks. The 0.17 trap rate is the Firework aim. At 87% casual it does not feel like a boss.","fix":"Cut Sparks to 3 and add a second Firework target decoy, so the player must commit."},
+{"n":14,"rating":7,"purpose":"Teach thread: where you merge matters.","problem":"The 5x2 board is cramped and 99% casual. Fine as a teach, but it is wasted space.","fix":"Keep it. Optionally add a bare-ground cell to show that a cell can be unreachable."},
+{"n":15,"rating":8,"purpose":"Practise: junk merges pull thread, so keep the cloths you need.","problem":"","fix":""},
+{"n":16,"rating":7,"purpose":"Teach the Needle on the knot that hides what you need.","problem":"Trap 0.2 with only 1 Spark. A stray Loom tap or a wrong-knot Needle is a hidden fatal move early in the game.","fix":"Add a second Spark and make the Flower Basket the only other generator, so the fatal tap is removed."},
+{"n":17,"rating":8,"purpose":"Twist: thread traps the generator itself.","problem":"","fix":""},
+{"n":18,"rating":8,"purpose":"Teach recipes: the spool you don't merge becomes the dupatta.","problem":"","fix":""},
+{"n":19,"rating":7,"purpose":"Practise: spend the expensive generator only on what recipes need.","problem":"The price lesson is a restatement of cost arithmetic. The first expensive-generator level is mostly counting.","fix":"Add a cheap-to-misuse Dye Stand neighbour, or a decoy that looks like it saves a tap."},
+{"n":20,"rating":8,"purpose":"Story beat: Big Merge ring reaches over bare ground.","problem":"","fix":""},
+{"n":21,"rating":8,"purpose":"Combine thread and recipe: free the dye with the cloth you will dye.","problem":"","fix":""},
+{"n":22,"rating":8,"purpose":"Twist: recipes pull thread too.","problem":"","fix":""},
+{"n":23,"rating":7,"purpose":"Breather, with the Needle freeing a generator.","problem":"It does ease the spike (100%). The Needle-on-generator idea is new but trivial.","fix":"Fine. Make the board prettier or add a charming story item."},
+{"n":24,"rating":8,"purpose":"Combine Big Merge with a recipe: the bonus is the next input.","problem":"","fix":""},
+{"n":25,"rating":6,"purpose":"Story beat: one Big Merge ring hits three blockers.","problem":"The aha is excellent, but it introduces jars in a Story level, 15 levels before the Jar teach (L40), while also mixing thread and Big Merge. This is an order break.","fix":"Move the Jar teach to about L24 or swap the jar for a knot. Keep the three-blocker ring idea, which is the best part."},
+{"n":26,"rating":8,"purpose":"Chapter 2 boss: Needle one knot, merge the other open.","problem":"","fix":""},
+{"n":27,"rating":7,"purpose":"Teach trunks and keys: open only what the order needs.","problem":"Clean, but 93% casual with one choice. The chilli trunks are the only teaching.","fix":"Keep it. Make the chilli trunks closer to the Key Smith."},
+{"n":28,"rating":8,"purpose":"Practise key tiers: two brass merge into silver.","problem":"","fix":""},
+{"n":29,"rating":9,"purpose":"Twist: a price list. One key, two trunks; open the expensive treasure.","problem":"","fix":""},
+{"n":30,"rating":7,"purpose":"Story beat: match each key to the lock only it can open.","problem":"Dense for a story beat, with extra spools, buds and a crate. The core idea is a rerun of L29/L28.","fix":"Remove the spool and bud clutter or turn it into the Sari order for a stronger link."},
+{"n":31,"rating":7,"purpose":"Teach 3-input recipes: mix first, then add turmeric.","problem":"95% casual and a decoy stall. A reasonable teach, but the aha is thin.","fix":"Fine. Make the decoy stall's queue show turmeric so the decoy is tempting."},
+{"n":32,"rating":8,"purpose":"Teach mixed recipes: a sari becomes half a banner.","problem":"","fix":""},
+{"n":33,"rating":8,"purpose":"Twist: read the queue; the trunk is the shortcut.","problem":"","fix":""},
+{"n":34,"rating":8,"purpose":"Breather: a lantern layout.","problem":"","fix":""},
+{"n":35,"rating":8,"purpose":"Story: a trunk can hold a key worth more than the key that opens it.","problem":"","fix":""},
+{"n":36,"rating":7,"purpose":"Combine: give each key the lock that needs its tier.","problem":"Overlaps with L30, which has the same silver-on-silver, brass-on-brass lesson.","fix":"Make the keys' order differ (brass first, silver second), so the tempting mistake is reversed."},
+{"n":37,"rating":8,"purpose":"Combine: Big-Merge first, then let the generator refill the small order.","problem":"","fix":""},
+{"n":38,"rating":8,"purpose":"Combine: one queue feeds every recipe; give each dye a job.","problem":"","fix":""},
+{"n":39,"rating":7,"purpose":"Chapter 3 boss: five brass keys Big-Merge into filigree plus silver.","problem":"The aha is good, but 81% casual and 100% skilled is too easy for a boss, and there are many mechanical steps (15 moves).","fix":"Cut Sparks to 5 and lock the second brass key behind a knot."},
+{"n":40,"rating":6,"purpose":"Teach jars: the merges you need are the cracks.","problem":"Jars were already used in L25. 100% casual, and the board is cramped. A late teach that teaches nothing the player hasn't met.","fix":"Move the Jar teach to before L25 and make L40 a harder practise level with two jars."},
+{"n":41,"rating":7,"purpose":"Practise: find the one cell that touches both jars.","problem":"A 3x4 board with only 5 empty cells is tight. It is the same shape as L8-L10.","fix":"Widen to 5x4 and offset one jar to make the shared cell harder to find."},
+{"n":42,"rating":8,"purpose":"Breather: a jar holds a key.","problem":"","fix":""},
+{"n":43,"rating":8,"purpose":"Combine jars and thread: one cell touches all three blockers.","problem":"","fix":""},
+{"n":44,"rating":7,"purpose":"Teach staged orders: have the next stage ready.","problem":"3/3 Sparks used with 76% casual is harsh for a teach. The aha is mild.","fix":"Give 4 Sparks. Show the locked stage card with a visible ghost of its recipe."},
+{"n":45,"rating":7,"purpose":"Practise stages with a jar: a recipe is a crack too.","problem":"Zero slack, 61% casual, and it stacks stages and jar on a 5x3 board.","fix":"Add 1 Spark or pre-crack the jar once."},
+{"n":46,"rating":8,"purpose":"Twist: the Big Merge bonus plate is the platter's missing half.","problem":"","fix":""},
+{"n":47,"rating":8,"purpose":"Teach the Sweep: a crack on every jar in the row.","problem":"","fix":""},
+{"n":48,"rating":6,"purpose":"Breather on a pretty rangoli board.","problem":"Pure repetition of known merges. Just 8 forced moves, 100%, no aha. The bud offering is a throwaway.","fix":"Keep the rangoli, but make the symmetry itself the puzzle (a missing petal that needs a Big Merge) or make it a story moment."},
+{"n":49,"rating":7,"purpose":"Combine staged orders, a 3-input recipe and a jar.","problem":"Dense (three generators, a jar, stages) with zero slack. The aha is repeated from L45.","fix":"Remove one generator or give a Spark."},
+{"n":50,"rating":8,"purpose":"Combine: count blockers per row and sweep the best row.","problem":"","fix":""},
+{"n":51,"rating":8,"purpose":"Combine: each stage consumes its dish, so count two Pongals.","problem":"","fix":""},
+{"n":52,"rating":8,"purpose":"Chapter 4 boss: one cell touches all three jars.","problem":"","fix":""},
+{"n":53,"rating":8,"purpose":"Teach wrapped trunks: make the key next to its own trunk.","problem":"","fix":""},
+{"n":54,"rating":8,"purpose":"Practise: split the jobs, keys unwrap one corner and flowers the other.","problem":"","fix":""},
+{"n":55,"rating":8,"purpose":"Twist: the Sweep opens a crate and cracks jars.","problem":"","fix":""},
+{"n":56,"rating":8,"purpose":"Combine: alternate two builds so every merge unwraps something.","problem":"","fix":""},
+{"n":57,"rating":5,"purpose":"Late practise of the 3-input masala.","problem":"Filler. It is a 12-move queue-counting rerun of L31 and L33, with no new blocker or twist, and only the queue to read.","fix":"Replace it. Put the masala on a wrapped trunk or add a staged order, or make it a breather that is actually easier."},
+{"n":58,"rating":8,"purpose":"Teach chain orders: an order pays the key for the next.","problem":"","fix":""},
+{"n":59,"rating":7,"purpose":"Practise a three-link chain.","problem":"The side Brass Diya order and the lamp shelf add clutter. 4 generators' worth of reading for one aha.","fix":"Drop the Brass Diya order and the Lamp Shelf."},
+{"n":60,"rating":7,"purpose":"Breather: a chain that pays its own way.","problem":"It is easier than its neighbours (81%), so it works. The aha is small.","fix":"Fine. A story moment would help."},
+{"n":61,"rating":7,"purpose":"Combine: the first banner pays for the second.","problem":"Casual 57% against skilled 93% means the order is hard to read, not hard to do. 14 moves and 4/4 Sparks.","fix":"Show the reward preview on the order card and add 1 Spark."},
+{"n":62,"rating":9,"purpose":"Finale 1: on a full board, the cell you empty is where the next piece lands.","problem":"","fix":""},
+{"n":63,"rating":8,"purpose":"Finale 2: don't buy what the board will give you.","problem":"","fix":""},
+{"n":64,"rating":8,"purpose":"Grand finale: follow the chain, with all mechanics on one great board.","problem":"","fix":""}
+]}
+
+REDESIGN THESE LEVELS (keep the ones not listed):
+
+
+level-design score 7.4/10 — 
+curve: Strong spine. Mechanics arrive one at a time, in chapters of 13 with a boss at L13, L26, L39, L52 and L64, and breathers at L23, L34, L42, L48 and L60. The tutorial ramp is clean: merge, generator and decoy, crate, Big Merge, Fireworks, thread, Needle, recipes, trunks, 3-input recipes, jars, Sweep, staged and chain orders.
+
+Problems:
+1) Order breaks. Jars appear in L25 inside a Story/Combine level (jar plus thread plus Big Merge), but the Jar teach is L40. L40 is a 100%-win teach that arrives 15 levels late. L14 (thread) and L53 (wrapped trunk) are the right model.
+2) Template fatigue. "Four items in the corners, the generator in the centre, tap once for five, then Big Merge" is the same board in L8, L9, L10, L24, L25, L41 and L46. Big Merge is the set's signature trick, and it is used as a reflex.
+3) Early spike. L6 is a Practise level at 71% casual with zero Spark slack, straight after a 99% level.
+4) Tight Sparks. Late levels often use 100% of the Sparks (L44, L45, L46, L49, L51, L52, L58, L64), so a single wrong tap loses. That is acceptable for the finales but not for the teach and practise levels.
+5) Board size. Almost every board is 5x4 or smaller, even though the shipped board is 7x9. Only L62 and L64 use a real board, and only L62 tests crowding. The Bag, Sort and Undo systems are never exercised.
+6) Difficulty targets: L1-3 casual wins are 100/97/91 (pass). The last-third casual average is about 64.8% (pass, but only just). No easy streak breaks the rules. L39, the Chapter 3 boss, is too easy at 81% and has too much slack. L57 is filler.
+7) Late levels (L44-L64) are consistently strong. The best are L25, L29, L35, L37, L42, L50, L55 and L62.", "summary": "A thoughtful, well-signposted puzzle set with real aha moments. Almost every level has a single named idea and a decoy that punishes the obvious move. Teach, Practise, Twist and Combine are clearly separated, and the writing is warm and culturally specific. The set's strongest quality is levels where the same cell, key or bonus piece is reused cleverly (L29, L35, L37, L42, L50, L55, L62).
+
+Weaknesses:
+1) The "tap to five, then Big Merge" template is overused.
+2) Jar mechanics appear in L25 before the L40 jar teach.
+3) Several teach and practise levels have no Spark slack (L6, L16, L44, L45).
+4) L39 (boss) and L57 are soft or filler.
+5) Board footprints are nearly all small and tidy, so the Bag, Sort and full-board systems from the design doc are barely tested outside L62 and L64.
+6) Bot win rates fit the targets, but only barely (last third about 64.8%).
+
+Overall: solid, shippable after fixing the jar ordering, loosening L6 and L16, adding variety to the Big Merge cluster, and replacing L57.", "levels": [
+{"n":1,"rating":7,"purpose":"Teach merge: two equal items become the next tier.","problem":"Fine and tiny. Single choice, so there is no decision, but that is right for a first-run level.","fix":"Optional: make the board 4x4 or add a decorative lamp shelf so it feels like a room, not a test cell."},
+{"n":2,"rating":7,"purpose":"Teach a two-step chain, with the basket as a decoy.","problem":"Solid, but the decoy basket in level 2 is slightly early. The intent matches the board.","fix":"Keep it. Consider showing the Toran recipe preview automatically on a long-press."},
+{"n":3,"rating":7,"purpose":"Teach reading the order tray with three generators, one of them wasted.","problem":"Good intent. The 13-move optimal path is long for a third level, and one wasted tap is forgiven, so the lesson is soft.","fix":"Trim the board to 4x4 and cut the Sparks to 5 so the one-waste rule still bites."},
+{"n":4,"rating":8,"purpose":"Teach that a crate is worth what its lid shows.","problem":"","fix":""},
+{"n":5,"rating":6,"purpose":"Story beat with a count-the-board lesson.","problem":"A story beat carrying no new idea. It repeats L4's crate-value lesson, 99% casual, and the 5x5 board has 18 empty cells, so the space is wasted.","fix":"Make the story beat a moment: a 4x4 board with a Dadi-letter item that must be delivered, or drop the crate and use one tap-or-leftover choice."},
+{"n":6,"rating":6,"purpose":"Practise splitting pieces to fit orders.","problem":"Spike: 71% casual straight after 99%. All 4 Sparks are needed with zero slack. The aha (don't over-merge) is good, but one slip loses at level 6.","fix":"Give 5 Sparks, or pre-place a second Brass Diya. Keep the order set."},
+{"n":7,"rating":8,"purpose":"Practise reading the generator's visible queue.","problem":"","fix":""},
+{"n":8,"rating":8,"purpose":"Teach Big Merge by making five of a kind.","problem":"","fix":""},
+{"n":9,"rating":7,"purpose":"Practise Big Merge, with the bonus used as a partner.","problem":"Same board shape as L8, right after it. The new aha (the bonus as a partner) is real but small.","fix":"Offset the corners and add a bare-ground cell so the player has to choose where to land the Big Merge."},
+{"n":10,"rating":8,"purpose":"Story hand-off: one Big Merge pays two neighbours.","problem":"","fix":""},
+{"n":11,"rating":7,"purpose":"Teach Fireworks: aim for the 3x3 that covers the most.","problem":"20 starting choices is overwhelming for a teach. A 0.08 trap rate is tolerable, but the lid-reading aha is buried in noise.","fix":"Reduce to about 7 crates so the right aim is findable by looking, not by counting."},
+{"n":12,"rating":8,"purpose":"Twist: five of a kind always Big-Merges, so merge your pairs first.","problem":"","fix":""},
+{"n":13,"rating":7,"purpose":"Chapter 1 boss combining crates, Fireworks and Big Merge.","problem":"The optimal path uses 2 of 4 Sparks. The 0.17 trap rate is the Firework aim. At 87% casual it does not feel like a boss.","fix":"Cut Sparks to 3 and add a second Firework target decoy, so the player must commit."},
+{"n":14,"rating":7,"purpose":"Teach thread: where you merge matters.","problem":"The 5x2 board is cramped and 99% casual. Fine as a teach, but it is wasted space.","fix":"Keep it. Optionally add a bare-ground cell to show that a cell can be unreachable."},
+{"n":15,"rating":8,"purpose":"Practise: junk merges pull thread, so keep the cloths you need.","problem":"","fix":""},
+{"n":16,"rating":7,"purpose":"Teach the Needle on the knot that hides what you need.","problem":"Trap 0.2 with only 1 Spark. A stray Loom tap or a wrong-knot Needle is a hidden fatal move early in the game.","fix":"Add a second Spark and make the Flower Basket the only other generator, so the fatal tap is removed."},
+{"n":17,"rating":8,"purpose":"Twist: thread traps the generator itself.","problem":"","fix":""},
+{"n":18,"rating":8,"purpose":"Teach recipes: the spool you don't merge becomes the dupatta.","problem":"","fix":""},
+{"n":19,"rating":7,"purpose":"Practise: spend the expensive generator only on what recipes need.","problem":"The price lesson is a restatement of cost arithmetic. The first expensive-generator level is mostly counting.","fix":"Add a cheap-to-misuse Dye Stand neighbour, or a decoy that looks like it saves a tap."},
+{"n":20,"rating":8,"purpose":"Story beat: Big Merge ring reaches over bare ground.","problem":"","fix":""},
+{"n":21,"rating":8,"purpose":"Combine thread and recipe: free the dye with the cloth you will dye.","problem":"","fix":""},
+{"n":22,"rating":8,"purpose":"Twist: recipes pull thread too.","problem":"","fix":""},
+{"n":23,"rating":7,"purpose":"Breather, with the Needle freeing a generator.","problem":"It does ease the spike (100%). The Needle-on-generator idea is new but trivial.","fix":"Fine. Make the board prettier or add a charming story item."},
+{"n":24,"rating":8,"purpose":"Combine Big Merge with a recipe: the bonus is the next input.","problem":"","fix":""},
+{"n":25,"rating":6,"purpose":"Story beat: one Big Merge ring hits three blockers.","problem":"The aha is excellent, but it introduces jars in a Story level, 15 levels before the Jar teach (L40), while also mixing thread and Big Merge. This is an order break.","fix":"Move the Jar teach to about L24 or swap the jar for a knot. Keep the three-blocker ring idea, which is the best part."},
+{"n":26,"rating":8,"purpose":"Chapter 2 boss: Needle one knot, merge the other open.","problem":"","fix":""},
+{"n":27,"rating":7,"purpose":"Teach trunks and keys: open only what the order needs.","problem":"Clean, but 93% casual with one choice. The chilli trunks are the only teaching.","fix":"Keep it. Make the chilli trunks closer to the Key Smith."},
+{"n":28,"rating":8,"purpose":"Practise key tiers: two brass merge into silver.","problem":"","fix":""},
+{"n":29,"rating":9,"purpose":"Twist: a price list. One key, two trunks; open the expensive treasure.","problem":"","fix":""},
+{"n":30,"rating":7,"purpose":"Story beat: match each key to the lock only it can open.","problem":"Dense for a story beat, with extra spools, buds and a crate. The core idea is a rerun of L29/L28.","fix":"Remove the spool and bud clutter or turn it into the Sari order for a stronger link."},
+{"n":31,"rating":7,"purpose":"Teach 3-input recipes: mix first, then add turmeric.","problem":"95% casual and a decoy stall. A reasonable teach, but the aha is thin.","fix":"Fine. Make the decoy stall's queue show turmeric so the decoy is tempting."},
+{"n":32,"rating":8,"purpose":"Teach mixed recipes: a sari becomes half a banner.","problem":"","fix":""},
+{"n":33,"rating":8,"purpose":"Twist: read the queue; the trunk is the shortcut.","problem":"","fix":""},
+{"n":34,"rating":8,"purpose":"Breather: a lantern layout.","problem":"","fix":""},
+{"n":35,"rating":8,"purpose":"Story: a trunk can hold a key worth more than the key that opens it.","problem":"","fix":""},
+{"n":36,"rating":7,"purpose":"Combine: give each key the lock that needs its tier.","problem":"Overlaps with L30, which has the same silver-on-silver, brass-on-brass lesson.","fix":"Make the keys' order differ (brass first, silver second), so the tempting mistake is reversed."},
+{"n":37,"rating":8,"purpose":"Combine: Big-Merge first, then let the generator refill the small order.","problem":"","fix":""},
+{"n":38,"rating":8,"purpose":"Combine: one queue feeds every recipe; give each dye a job.","problem":"","fix":""},
+{"n":39,"rating":7,"purpose":"Chapter 3 boss: five brass keys Big-Merge into filigree plus silver.","problem":"The aha is good, but 81% casual and 100% skilled is too easy for a boss, and there are many mechanical steps (15 moves).","fix":"Cut Sparks to 5 and lock the second brass key behind a knot."},
+{"n":40,"rating":6,"purpose":"Teach jars: the merges you need are the cracks.","problem":"Jars were already used in L25. 100% casual, and the board is cramped. A late teach that teaches nothing the player hasn't met.","fix":"Move the Jar teach to before L25 and make L40 a harder practise level with two jars."},
+{"n":41,"rating":7,"purpose":"Practise: find the one cell that touches both jars.","problem":"A 3x4 board with only 5 empty cells is tight. It is the same shape as L8-L10.","fix":"Widen to 5x4 and offset one jar to make the shared cell harder to find."},
+{"n":42,"rating":8,"purpose":"Breather: a jar holds a key.","problem":"","fix":""},
+{"n":43,"rating":8,"purpose":"Combine jars and thread: one cell touches all three blockers.","problem":"","fix":""},
+{"n":44,"rating":7,"purpose":"Teach staged orders: have the next stage ready.","problem":"3/3 Sparks used with 76% casual is harsh for a teach. The aha is mild.","fix":"Give 4 Sparks. Show the locked stage card with a visible ghost of its recipe."},
+{"n":45,"rating":7,"purpose":"Practise stages with a jar: a recipe is a crack too.","problem":"Zero slack, 61% casual, and it stacks stages and jar on a 5x3 board.","fix":"Add 1 Spark or pre-crack the jar once."},
+{"n":46,"rating":8,"purpose":"Twist: the Big Merge bonus plate is the platter's missing half.","problem":"","fix":""},
+{"n":47,"rating":8,"purpose":"Teach the Sweep: a crack on every jar in the row.","problem":"","fix":""},
+{"n":48,"rating":6,"purpose":"Breather on a pretty rangoli board.","problem":"Pure repetition of known merges. Just 8 forced moves, 100%, no aha. The bud offering is a throwaway.","fix":"Keep the rangoli, but make the symmetry itself the puzzle (a missing petal that needs a Big Merge) or make it a story moment."},
+{"n":49,"rating":7,"purpose":"Combine staged orders, a 3-input recipe and a jar.","problem":"Dense (three generators, a jar, stages) with zero slack. The aha is repeated from L45.","fix":"Remove one generator or give a Spark."},
+{"n":50,"rating":8,"purpose":"Combine: count blockers per row and sweep the best row.","problem":"","fix":""},
+{"n":51,"rating":8,"purpose":"Combine: each stage consumes its dish, so count two Pongals.","problem":"","fix":""},
+{"n":52,"rating":8,"purpose":"Chapter 4 boss: one cell touches all three jars.","problem":"","fix":""},
+{"n":53,"rating":8,"purpose":"Teach wrapped trunks: make the key next to its own trunk.","problem":"","fix":""},
+{"n":54,"rating":8,"purpose":"Practise: split the jobs, keys unwrap one corner and flowers the other.","problem":"","fix":""},
+{"n":55,"rating":8,"purpose":"Twist: the Sweep opens a crate and cracks jars.","problem":"","fix":""},
+{"n":56,"rating":8,"purpose":"Combine: alternate two builds so every merge unwraps something.","problem":"","fix":""},
+{"n":57,"rating":5,"purpose":"Late practise of the 3-input masala.","problem":"Filler. It is a 12-move queue-counting rerun of L31 and L33, with no new blocker or twist, and only the queue to read.","fix":"Replace it. Put the masala on a wrapped trunk or add a staged order, or make it a breather that is actually easier."},
+{"n":58,"rating":8,"purpose":"Teach chain orders: an order pays the key for the next.","problem":"","fix":""},
+{"n":59,"rating":7,"purpose":"Practise a three-link chain.","problem":"The side Brass Diya order and the lamp shelf add clutter. 4 generators' worth of reading for one aha.","fix":"Drop the Brass Diya order and the Lamp Shelf."},
+{"n":60,"rating":7,"purpose":"Breather: a chain that pays its own way.","problem":"It is easier than its neighbours (81%), so it works. The aha is small.","fix":"Fine. A story moment would help."},
+{"n":61,"rating":7,"purpose":"Combine: the first banner pays for the second.","problem":"Casual 57% against skilled 93% means the order is hard to read, not hard to do. 14 moves and 4/4 Sparks.","fix":"Show the reward preview on the order card and add 1 Spark."},
+{"n":62,"rating":9,"purpose":"Finale 1: on a full board, the cell you empty is where the next piece lands.","problem":"","fix":""},
+{"n":63,"rating":8,"purpose":"Finale 2: don't buy what the board will give you.","problem":"","fix":""},
+{"n":64,"rating":8,"purpose":"Grand finale: follow the chain, with all mechanics on one great board.","problem":"","fix":""}
+]}
+

@@ -1,0 +1,78 @@
+PASS level_intents: all 64 levels have a specific intent
+PASS no_filler_levels: no trivial filler levels after the tutorial
+FAIL level_design: level-design review 7.4/10 (bar 8), 0 level(s) below 6/10: This is a well-engineered set. Every level has a stated aha, the intents mostly match the boards, and each board has a replayed proof. The late-game difficulty is on target: the last-third casual average is about 64% and the skilled rates are 77-97%. The weaknesses are these:
+- **Counting theme overused early.** L2-L6 all teach "count what's missing" with a decoy.
+- **Decoy-row Sweep repeated.** The "pick the row with the most blockers" puzzle appears in L43, L50, L52 and L56.
+- **Chain orders out of order.** The pays/chain-order mechanic is used in L51 before L57 teaches it, then L57-L61 are five chain-order levels in a row.
+- **Hidden fatal first moves.** L36, L44, L50, L56, L19 and L15 have trap rates of 0.14-0.33. Several of these fatal first moves are only recoverable through Undo.
+- **Boards are tiny puzzle boxes.** Most boards are 3x3 to 5x5 with 5-14 moves, so they read as puzzles, not the 7x9 generator-merge sessions the design doc promises. The core loop of clutter, energy pacing, Bag and Sort is never tested.
+- **Breather placement.** L21 and L34 follow levels that are already easy, so they don't relieve any difficulty. The real difficulty spike (L19 at 60%) has no rest after it.
+- **Boosters are thin.** Each booster is taught once and used a few times, and the Bag, Sort and Undo are never needed.
+
+The finale trio (L62-L64) is strong and memorable. Curve: The intro run (L1-L13) is clean and well paced. It runs merge, generator, order tray, crates, Big Merge, Fireworks and then a boss, with each mechanic introduced alone first. Casual win rates fall smoothly from 99% to 78%. The weak spot is L2-L6, which are five levels that all teach "count what's missing". L5 and L6 in particular feel like L2/L3 again with different art.
+
+Thread (L14-L17, then L20-L23) and recipes (L18-L19) are introduced one at a time and combined sensibly. Recipes arrive late, at L18, even though the core loop leans on them, so consider moving them earlier. L19 is an isolated spike at 60% casual between 85% and 93%, and it is driven by a trap, not by depth. L21 (the first breather) comes after a 93% level, not after the hard one.
+
+Jars (L24, L40, L44, L45), trunks (L27-L30, L33, L36, L53-L55) and 3-input recipes (L31-L32) are each taught cleanly. L33-L36 is a good arc (story, breather, teach, combine). The weak spots are L36 and L44, which carry a 0.33 trap rate each.
+
+The back half is where pacing slips:
+- **Staged orders.** Staged orders are taught at L41, then used in L45-L46.
+- **Chain orders.** Chain orders (pays) are first needed in L51, which is a COMBINE level. They are only taught at L57, which comes after the run that needed them, then five chain-order levels (L57-L61) arrive in a row, so the mechanic is stale before the finale.
+- **Decoy-row Sweep puzzles.** These repeat across L43, L50, L52 and L56.
+- **Difficulty targets.** L43 is a teach level at 73% casual, which is too low for a teach. The last-third average of about 64% and skilled rates of 77-97% meet the studio targets, but several levels hit them through traps and hidden-info gaps (casual versus skilled gaps of 35-40 points in L45, L49 and L62), not through depth.
+- **Easy streaks.** No level breaks the easy-streak rule, since two consecutive levels at 90% or above is the maximum.
+- **Finale.** The finale trio (L62-L64) is a strong crescendo: deliver to free the cell, then every merge does two jobs, then the chain spine. L64 at 43% casual is brutal but acceptable for a grand finale.
+
+Fix list: re-order the chain-order teach before L51, spread the chain levels with non-chain ones, soften the traps with a spare Spark, and add a real breather after L19.
+REDESIGN THESE LEVELS (keep the ones not listed):
+L5 (6/10): Same 'count what's missing' aha as L2-L4 and L6. The story framing isn't tied to the board, and with 2 Sparks and a 91% win it is just a small repeat. → Give it a story-specific twist: a keepsake heirloom that must stay on the board while the player builds around it, or two competing half-builds where only one fits the budget. Move it away from L6.
+L19 (6/10): Casual 60% with a 0.17 trap rate sits between 85% and 93% neighbours, so it is an isolated spike. The cause is a dye-on-the-wrong-piece trap, not depth. The first 2-Spark generator is introduced inside a practise level. → Add a fifth Spark, or place a third pot on the board, so the mis-drop costs the star. Teach the 2-Spark price in an earlier gentle level.
+L36 (6/10): The trap rate is 0.33: using the silver key on the brass trunk is a fatal choice at the first move, from a one-in-three first step. Only Undo saves it. → Add a third Spark or a second silver key source so the mistake costs the star. Or show the key queue as an explicit hint.
+L44 (6/10): Trap rate 0.33 with 67% casual. Merging the loose Clay Diyas where they stand is fatal and hidden. Undo is the only fix. → Add a fourth Spark, or make the loose pair start next to the first jar so the fatal first merge isn't tempting.
+L50 (6/10): Trap rate 0.25: sweeping the bottom row is fatal and only Undo recovers. It repeats the decoy-row Sweep of L43. Two Sparks that are never used are also confusing. → Make the wrong row cost the star by adding an extra Loom spool. Or change the decoy so the wrong sweep still leaves a solvable board.
+L51 (6/10): It uses chain orders ('pays') before the mechanic is taught, which only happens in L57. It also mixes staged orders, a jar and the Platter recipe in one go, so the card behaviour is learned the hard way. → Move the chain-order teach (L57) before this level. Or cut the jar here so the new payback is the only new idea.
+L56 (6/10): Trap rate 0.2 on the wrong row. It repeats the L50 decoy-row logic, and the Big Merge ring finishing the knot is hard to see. → Remove the decoy bottom-row knot, or make the wrong sweep cost a Spark. Replace the idea with a Big Merge ring puzzle that is not about picking a row.
+L6 (7/10): The aha 'don't over-merge' is good, but it again follows the counting theme of L2-L5. → Add a second order type or a crate so it is not another pure count. Alternatively, swap it with L7 to break up the run of counting levels.
+L7 (7/10): The intent calls the laddu crate a trap, but the reported trap rate is 0. Using it needs a fifth Spark, so either the budget or the intent is wrong. The 13-cell board is also loose. → Make the trap real and recoverable: either drop to 3 Sparks plus the bud crate, or reword the intent. Trim the board to 4x3 so the crates and the queue are the whole story.
+L9 (7/10): The intent lists two routes plus a failing route, which is a lot of text for the aha. The hidden fifth-from-buds insight is fairly deep at L9. → Remove one waiting Marigold so only one route works, or add a bare-ground cell that forces the smaller-tier path.
+L11 (7/10): The lesson is just 'aim at the centre'. The 'two Sparks' line is meaningless because the optimal solution uses none. It has a 0.08 trap rate on corner bursts. → Make the centre not optimal by one cell, for example a plain order on the edge, so the player has to read lids. Or remove the dead-end corner bursts.
+L15 (7/10): The trap is the obvious cloth pair. It carries a 0.14 trap rate and is fatal at the first move, with no Loom to recover. Two easy levels in a row (L14 at 97%, L15 at 94%) also sit here. → Add a Loom Basket with a spare Spark so the decoy costs the star, not the level. Or make the decoy cloth pair non-adjacent so it isn't the obvious first drag.
+L21 (7/10): It follows L20 at 93%, so it is not a rest after a hard level. The real spike (L19 at 60%) is two levels earlier. It is a pretty picture but a thin puzzle. → Move the breather directly after L19, or swap L19 and L21. Keep the swing layout.
+L25 (7/10): The Big Merge ring, thread and recipes are close to L20 and L22 mashed together. Because the ring covers the whole 5x5, the aha is mostly 'drop on the centre', and the board is a near-repeat. → Use a 7x7 area or offset the knots so only a non-obvious cell reaches all three. Or change one knot to a jar so it feels new.
+L29 (7/10): The solver's fewest-moves line is the 4-Spark one and the stored plan is a different 9-move line, so the 'optimal' signal is misleading. The Key Smith at 4 Sparks also looks arbitrary. → Lower the Spark budget by one so that the cheap plan is the only path. Give the Key Smith a visibly obvious price tag in the preview.
+L31 (7/10): Casual 100% with a queue that spoils the order gives little room for the aha; the 'turmeric first' queue is more a gotcha than an insight. → Make the order visible with the queue showing pepper first, then let the player discover turmeric only fits on the mix. Leave one spare Spark.
+L35 (7/10): At 93% casual and following L34 at 100%, it is an easy streak. The aha ('dye on cloth') duplicates L18. → Remove the third spool so the wrong dye choice costs a Spark. Place it after a harder level.
+L41 (7/10): The aha reuses the counting insight from L2-L6. Pongal is introduced here, which is fine, but 'plan for the locked card' is thin. → Add a decoy generator or make the locked card need the same ingredient that the first card consumes, so the shared budget bites.
+L42 (7/10): The 100% casual win and the surprise are pleasant, but it is another jar-then-trunk plan with no decision beyond where to merge. → Add a second jar holding a decoy item and give it one meaningful placement choice.
+L43 (7/10): A teach level at 73% casual is too hard. It stacks three orders, a decoy row, the Sweep and jar placement, so the new booster is buried. → Cut to two orders (Marigold and Toran), remove the nearly open decoy jar and the Laddu Box order, and teach the Sweep alone.
+L45 (7/10): A 38-point gap between casual (57%) and skilled (95%) means the solution depends on invisible info: where each Hearth drops ghee. Three generators and a 5x3 board is cramped. → Show the drop cell on the Hearth preview, or remove the second Hearth. Give a hint outline around the jar.
+L48 (7/10): It is placed well but the aha is mild, and the intent says 13 moves while the stored proof is 14. The 'five laddus Big Merge' note is a hazard in a rest level. → Keep it, but drop the stray Big Merge hazard so it is a pure rest. Align the move counts in the intent.
+L52 (7/10): The optimal line exceeds the solver's search cap, so a casual player cannot plan it. The Sweep is a repeat of the decoy-row idea in L43, L50 and L56. → Remove the crated Laddu fallback or one jar so the search is tractable. Add a new boss element, such as a second booster, to avoid another decoy row.
+L54 (7/10): A pure decoy generator (the Lamp Shelf) and a decoy trunk add clutter. 53% casual with a spare of one Spark makes the stray-tap penalty harsh. → Remove the Lamp Shelf and add one extra useful wrapped trunk. Give a second Spark spare.
+L55 (7/10): It stacks a wrapped trunk, a 3-input recipe and a crate over 9 moves and 4 Sparks, which is not a restful level. The aha is hinted in the start hint. → Drop the wrapped trunk and keep the crate key, or lower it to a plain masala build.
+
+level-design score 7.4/10 — This is a well-engineered set. Every level has a stated aha, the intents mostly match the boards, and each board has a replayed proof. The late-game difficulty is on target: the last-third casual average is about 64% and the skilled rates are 77-97%. The weaknesses are these:
+- **Counting theme overused early.** L2-L6 all teach "count what's missing" with a decoy.
+- **Decoy-row Sweep repeated.** The "pick the row with the most blockers" puzzle appears in L43, L50, L52 and L56.
+- **Chain orders out of order.** The pays/chain-order mechanic is used in L51 before L57 teaches it, then L57-L61 are five chain-order levels in a row.
+- **Hidden fatal first moves.** L36, L44, L50, L56, L19 and L15 have trap rates of 0.14-0.33. Several of these fatal first moves are only recoverable through Undo.
+- **Boards are tiny puzzle boxes.** Most boards are 3x3 to 5x5 with 5-14 moves, so they read as puzzles, not the 7x9 generator-merge sessions the design doc promises. The core loop of clutter, energy pacing, Bag and Sort is never tested.
+- **Breather placement.** L21 and L34 follow levels that are already easy, so they don't relieve any difficulty. The real difficulty spike (L19 at 60%) has no rest after it.
+- **Boosters are thin.** Each booster is taught once and used a few times, and the Bag, Sort and Undo are never needed.
+
+The finale trio (L62-L64) is strong and memorable.
+curve: The intro run (L1-L13) is clean and well paced. It runs merge, generator, order tray, crates, Big Merge, Fireworks and then a boss, with each mechanic introduced alone first. Casual win rates fall smoothly from 99% to 78%. The weak spot is L2-L6, which are five levels that all teach "count what's missing". L5 and L6 in particular feel like L2/L3 again with different art.
+
+Thread (L14-L17, then L20-L23) and recipes (L18-L19) are introduced one at a time and combined sensibly. Recipes arrive late, at L18, even though the core loop leans on them, so consider moving them earlier. L19 is an isolated spike at 60% casual between 85% and 93%, and it is driven by a trap, not by depth. L21 (the first breather) comes after a 93% level, not after the hard one.
+
+Jars (L24, L40, L44, L45), trunks (L27-L30, L33, L36, L53-L55) and 3-input recipes (L31-L32) are each taught cleanly. L33-L36 is a good arc (story, breather, teach, combine). The weak spots are L36 and L44, which carry a 0.33 trap rate each.
+
+The back half is where pacing slips:
+- **Staged orders.** Staged orders are taught at L41, then used in L45-L46.
+- **Chain orders.** Chain orders (pays) are first needed in L51, which is a COMBINE level. They are only taught at L57, which comes after the run that needed them, then five chain-order levels (L57-L61) arrive in a row, so the mechanic is stale before the finale.
+- **Decoy-row Sweep puzzles.** These repeat across L43, L50, L52 and L56.
+- **Difficulty targets.** L43 is a teach level at 73% casual, which is too low for a teach. The last-third average of about 64% and skilled rates of 77-97% meet the studio targets, but several levels hit them through traps and hidden-info gaps (casual versus skilled gaps of 35-40 points in L45, L49 and L62), not through depth.
+- **Easy streaks.** No level breaks the easy-streak rule, since two consecutive levels at 90% or above is the maximum.
+- **Finale.** The finale trio (L62-L64) is a strong crescendo: deliver to free the cell, then every merge does two jobs, then the chain spine. L64 at 43% casual is brutal but acceptable for a grand finale.
+
+Fix list: re-order the chain-order teach before L51, spread the chain levels with non-chain ones, soften the traps with a spare Spark, and add a real breather after L19.

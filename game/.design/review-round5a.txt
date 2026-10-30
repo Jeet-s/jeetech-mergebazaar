@@ -1,0 +1,64 @@
+PASS level_intents: all 64 levels have a specific intent
+PASS no_filler_levels: no trivial filler levels after the tutorial
+FAIL level_design: level-design review 7.6/10 (bar 8), 1 level(s) below 6/10: A strong, thoughtfully sequenced 64-level set. Most levels have a clear single idea, a true intent and a real aha, and the solver data backs the intent claims. The main problems are:
+- Hidden-fatal-move traps at L16 and L22, plus mild ones at L7.
+- Early difficulty spikes at L6, L17 and L21.
+- Heavy reliance on one Big Merge pattern.
+- A few repeated breather and practise boards (L34/L48, L31/L33/L57).
+- A very low casual rate in the final stretch with no breather.
+Fix those and this is near top-tier for the genre. Curve: Strong, well-sequenced teaching curve. Mechanics arrive one per level (merge, generator, orders, crates, Big Merge, fireworks, thread, needle, recipes, trunks and keys, 3-input recipes, jars, staged orders, sweep, wrapped trunks, chain orders). A twist or practise level follows almost every teach, and the bosses at L13, L26, L39 and L52 are evenly spaced. The finale trio (L62-64) is excellent. The "read the queue" and "don't buy what the board gives you" insights are the set's real strength.
+
+Problems:
+- Difficulty spikes early. L6 drops to 71% casual straight after 99%. L16 (trap 0.2) and L22 (trap 0.25 on 1 Spark) have hidden fatal moves. L17 and L21 sit at 67-68% casual for introductory thread levels.
+- The last-third casual average is about 65%, right on the limit. It is held up by L47 (85%), L48 (100%), L54-55 and L60 (73-81%). One or two more mid-60s levels there would give the intended "casual players sometimes fail" feel.
+- Big Merge is overused (L8, 9, 10, 12, 13, 20, 24, 25, 37, 39, 41, 46, 55, 60). The "gather five first" AHA blurs across them. Later ones need a different angle, such as a Big Merge that must be avoided, or one whose ring must hit a specific cell.
+- Sweep arrives late (L47) and is used only four times. Chain orders arrive at L58 and are then mixed in at once.
+- The breathers at L34 and L48 and the 3-input practise at L57 are near-copies of earlier levels.
+- Several teach boards are 3x3 to 5x2, with almost no placement decisions.
+- L49, L51, L56 and L59 pack 3-4 systems and 12-14 moves each.
+- The last chapter has no breather before the finale: L62-64 run 65%, 46% and 43% casual.
+REDESIGN THESE LEVELS (keep the ones not listed):
+L22 (5/10): The trap rate is 0.25 with a 1-Spark budget. One misplaced Dye Pot drop is fatal and the player cannot tell why, which is a hidden fatal move. → Give 2 Sparks or add a second free Dye Pot in the crate so an early mistake costs a star only.
+L16 (6/10): The trap rate is 0.2 with only 1 Spark, so a wrong first tap can end the level. Casual is 83% but a hidden fatal move is the kind of unfairness this level should not carry. → Add a second Spark or a spare Loom spool near the corner so one wrong tap costs the star, not the level.
+L48 (6/10): Pure repeat of the L34 breather: no blockers, no aha, 100% casual. It is filler. → Replace with a new mini-idea, such as a rangoli where the right fold order saves a Spark, or fold it into a shorter, prettier level.
+L57 (6/10): A repeat of L31/L33 with arithmetic only (count taps to 5), 12 moves of busywork, 57% casual from tedium rather than insight. → Replace it with a new twist: a Masala Tin order where the Chilli Bunch is accidentally Big-Merged away, or use the slot for a chain order teach.
+L1 (7/10): A 3x3 board with 7 empty cells and a single choice. It is fine for a first level but visually bare. → Keep it, but add a decorative bare-ground border or a rangoli floor so the tiny board looks intentional.
+L2 (7/10): The decoy is mild (only the efficiency star is lost) and the board is plain. → Fine. Make the Flower Basket tap visibly cost a star on the preview so the lesson sinks in.
+L3 (7/10): Solid, but 13 optimal moves on a first multi-order board is a small jump from L2. → Cut one required merge (start with an extra Clay Diya) so the level stays a quick win.
+L4 (7/10): The insight is good, but 5 choices on a 4x4 with 6 Sparks and 5 needed means the wrong-chain crate costs only a star. → Fine as taught. Make the sweets crate cost a Spark from the budget (5 Sparks) so the decoy has stakes.
+L5 (7/10): Almost identical in shape to L4 (crate lid value vs tap). The story beat is carried by text only. → Swap the crate for something new, such as a Laddu that already sits one merge from the order, so counting is the aha rather than the crate again.
+L6 (7/10): First real drop to 71% casual, right after 99%, and the first level with 3 orders and 2 crates, so it is a spike. → Give 5 Sparks, or pre-place the Marigold as F2, to bring casual to about 80% while keeping the split-the-pair aha.
+L7 (7/10): The laddu crate is a fatal move when only 4 Sparks are available (it fails with no warning), yet the trap rate reports 0. It is a hidden fatal move for guessers. → Add a fifth Spark or make the crate visibly redundant, so the trap costs the star, not the level.
+L9 (7/10): Same trigger as L8 immediately afterwards (gather five, tap once). The new use of the bonus is small. → Remove one corner bud so the player must also notice that the Marigold is part of the five, or move L9 later and put a non-Big-Merge level here.
+L10 (7/10): A third consecutive Big Merge level (L8, L9, L10) with the same gather-five shape. The aha is good but repetitive. → Swap L10 with L11 or add a distractor so the five need to be found rather than being laid out in corners.
+L14 (7/10): A 5x2 board with 5 empty cells gives little room to explore. It is correct but cramped. → Widen to 5x3 and add one more unrelated item so the player has to find the middle cell, not just fill the board.
+L17 (7/10): Casual 67% on only the second thread twist is a spike, and the corner spools can be misplaced irreversibly. → Add a fifth spool or a single-layer knot so one mistake is survivable.
+L18 (7/10): This teach has 82% casual and uses the Dye Stand, which is not otherwise needed. The "keep the third spool" aha is subtle for a first recipe. → Start with a spare Dye Pot already on the board so the first recipe is a pure drag and the Stand is introduced in L19.
+L19 (7/10): Mostly arithmetic, with 10 moves of busywork once you spot the plan. → Reduce the Spark budget to 7 and add a tempting extra Dye Stand tap, so the player must count rather than just execute.
+L21 (7/10): Casual 68% for a combine is harsh early in the game, and the obvious spool pair is the right answer, so the aha is thin. → Make the obvious pair the wrong one (e.g. the spools next to the knot are different tiers) so reading matters.
+L23 (7/10): A breather after the L22 spike works, but it largely repeats the L16 Needle lesson. → Keep the breather and add a second tiny Needle choice (a decoy knot on a bud) so there is something to read.
+L27 (7/10): One choice at the start and a decoy pair of chilli trunks. It is very linear for a teach. → Add one more key tap of slack and put a chilli trunk next to the Key Smith so the tired-thumb trap is real.
+L28 (7/10): Good idea, but it overlaps heavily with L35 and L36 later. → Keep and make the waiting key sit across the board so placement matters.
+L32 (7/10): A big jump: the player must build two halves at once. Casual is 78% and it is 9 moves for a teach. → Pre-place the Cloth so only the Garland half needs building, keeping the stack aha.
+L40 (7/10): 100% casual and skilled with only 2 choices, so little decision-making; the 4x3 board has two bare cells that do nothing. → Open the board to 5x3 and add a decoy W1 far from the jar so the build beside the jar matters.
+L41 (7/10): A cramped 3x4 board with only 5 empty cells, and the Big Merge pattern repeats once more. → Widen to 5x4 for room and keep the single both-jar cell as the aha.
+L42 (7/10): Fine as a breather, but 100% on a level with only 1 choice type adds little. → Add a second jar-adjacent cell that does not touch the trunk so the player must still think.
+
+level-design score 7.6/10 — A strong, thoughtfully sequenced 64-level set. Most levels have a clear single idea, a true intent and a real aha, and the solver data backs the intent claims. The main problems are:
+- Hidden-fatal-move traps at L16 and L22, plus mild ones at L7.
+- Early difficulty spikes at L6, L17 and L21.
+- Heavy reliance on one Big Merge pattern.
+- A few repeated breather and practise boards (L34/L48, L31/L33/L57).
+- A very low casual rate in the final stretch with no breather.
+Fix those and this is near top-tier for the genre.
+curve: Strong, well-sequenced teaching curve. Mechanics arrive one per level (merge, generator, orders, crates, Big Merge, fireworks, thread, needle, recipes, trunks and keys, 3-input recipes, jars, staged orders, sweep, wrapped trunks, chain orders). A twist or practise level follows almost every teach, and the bosses at L13, L26, L39 and L52 are evenly spaced. The finale trio (L62-64) is excellent. The "read the queue" and "don't buy what the board gives you" insights are the set's real strength.
+
+Problems:
+- Difficulty spikes early. L6 drops to 71% casual straight after 99%. L16 (trap 0.2) and L22 (trap 0.25 on 1 Spark) have hidden fatal moves. L17 and L21 sit at 67-68% casual for introductory thread levels.
+- The last-third casual average is about 65%, right on the limit. It is held up by L47 (85%), L48 (100%), L54-55 and L60 (73-81%). One or two more mid-60s levels there would give the intended "casual players sometimes fail" feel.
+- Big Merge is overused (L8, 9, 10, 12, 13, 20, 24, 25, 37, 39, 41, 46, 55, 60). The "gather five first" AHA blurs across them. Later ones need a different angle, such as a Big Merge that must be avoided, or one whose ring must hit a specific cell.
+- Sweep arrives late (L47) and is used only four times. Chain orders arrive at L58 and are then mixed in at once.
+- The breathers at L34 and L48 and the 3-input practise at L57 are near-copies of earlier levels.
+- Several teach boards are 3x3 to 5x2, with almost no placement decisions.
+- L49, L51, L56 and L59 pack 3-4 systems and 12-14 moves each.
+- The last chapter has no breather before the finale: L62-64 run 65%, 46% and 43% casual.

@@ -1,7 +1,9 @@
-# JeeTech mergebazaar
+# Merge Bazaar: Diwali Merge
 
-Play package `com.jeetech.mergebazaar`. Built and maintained by the AI Game Factory.
+Merge festival treasures, restore Dadi's home and play 64 cozy levels offline
 
-- `docs/` — GitHub Pages: landing page, privacy policy, terms
-- `game/` — game source as shipped
-- `store/` — store listing + graphics
+- Google Play: https://play.google.com/store/apps/details?id=com.jeetech.mergebazaar
+- Privacy policy: https://jeet-s.github.io/jeetech-mergebazaar/privacy.html
+- Current version: 1.0.0
+
+`game/` is the Expo (React Native) source as shipped; `store/` holds the listing and graphics.

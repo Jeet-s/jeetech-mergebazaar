@@ -1,0 +1,44 @@
+PASS level_intents: all 64 levels have a specific intent
+PASS no_filler_levels: no trivial filler levels after the tutorial
+FAIL level_design: level-design review 7/10 (bar 8), 0 level(s) below 6/10: The set is cohesive and well-structured. It has clear one-idea-per-level intent, honest "aha" text, a strong mechanic ladder and good chapter bosses. Weaknesses: the Big Merge "gather five" trick is reused heavily, several breathers are no easier than their neighbours, and a few levels have uneven trap rates or win rates (L8, L19, L21, L26, L53). Many levels are one-solution puzzles, so the set has little replay variety, and the late game leans on pre-planning with very small Spark budgets. About a dozen levels (L1, L2, L8, L12, L15, L19, L25, L35, L40, L48) need small fixes. The rest are solid or good. L62 and L44 are standouts. Overall this is a strong, handcrafted puzzle set that is not yet at top-tier polish. Curve: Strong, disciplined mechanic ladder: merge, generator, orders, crates, Big Merge, fireworks, thread, needle, recipes, trunks, 3-input recipes, jars, stages, sweep, wrapped blockers, chain orders, finales. Each mechanic is taught alone and then combined, and the chapter bosses are at L13, L26, L39 and L52. Problems:
+(1) The Big Merge "wait for the fifth" aha repeats too often (L8, L9, L10, L12, L13, L20, L24, L25, L34, L37, L39, L41, L46, L55, L60), so it reads as one trick reskinned.
+(2) Casual win rates are uneven. L8 (75% casual, trap 0.5) is a harsh early teach, and L13 and L26 fall to 67% and 43%. Meanwhile L34, L35, L40 and L42, which are meant as breathers, are the easiest levels around them. L19 (56%) and L21 (58%) spike right after the teach levels.
+(3) The easy streak at L1-L7 and L14-L16 is fine, but L27-L30 and L40-L42 have stretches of 97-100% casual with little tension.
+(4) The last third averages roughly 60-65% casual, which is near the ceiling. L64 (33% casual) is a fair finale only if its 18 optimal moves are readable.
+(5) The decoy-generator pattern ("every tap there is a decoy") appears at L3, L31, L62, L63 and L64. It is a good idea but gets repetitive.
+(6) Many solves use only 1-2 Sparks of a large budget (L25 uses 2 of 9, L15 uses 0 of 2), so there is little resource tension. The curve rewards pre-planning over adaptive play, so it sits well below the Royal Match or Flow Free standard for variety of feel.
+REDESIGN THESE LEVELS (keep the ones not listed):
+L2 (6/10): Near-duplicate of L1 with one more step; one choice, no decision. → Merge L1/L2 into one level or add a decoy tap so the player must count.
+L8 (6/10): Trap rate 0.5 and 75% casual in a teach level is harsh; pairing still wins only via an extra tap that costs no Spark, so the trap is mild. → Add a spare Spark so the pairing path is clearly recoverable, and highlight the 5-count in the preview.
+L19 (6/10): 56% casual is a spike right after the teach levels and breaks the easy flow. → Add a spare Spark or put one more cloth on the board.
+L21 (6/10): Casual 58% and trap 0.25 arrive too early for a first combine. → Put the knotted dye adjacent to a spool pair that is already obvious, and add a Spark.
+L23 (6/10): 12 optimal moves and 5/5 Sparks used make it long for a breather, and its win rate is not easier than its neighbours. → Remove the second order or shorten it to a Toran only.
+L26 (6/10): 43% casual with 79% skilled and trap 0.17 is steep; the wrong Needle target costs three Sparks, so it feels unfair. → Add 1 Spark and make the left knot visibly walled with the pieces around it.
+L34 (6/10): Lovely look, but there are four orders with many paths. The 7x7 lantern board is mostly bare ground, and 12 moves for a breather is a lot. → Cut to two orders (Rangoli and Laddu Box) so it is a real breather.
+L48 (6/10): Repeats L47's idea with half the clutter; 8 optimal moves and it needs a precise merge placement. → Drop to one jar per side already half-cracked and let the Sweep be optional.
+L53 (6/10): 54% casual and 13 moves for a teach level, with three mechanics at once. → Teach with one wrapped trunk only; move the second wrapped trunk to L54.
+L60 (6/10): 12 moves and 5/5 Sparks, so it is not easier than its neighbours, and it is another Big Merge. → Halve it: a Rangoli worth of Brass Diyas already waiting.
+L1 (7/10): Fine but the 3x3 board with 1 choice is a pure tutorial; slight dead space. → Add a second generator-less Clay Diya on the board so the player drags first, then taps.
+L3 (7/10): Good, but the W1 decoy is easy; 5x5 is mostly empty. → Shrink to 4x4 or put the decoy generator nearer the others.
+L5 (7/10): The aha is arithmetic, and the 5x5 is sparse. → Add a second crate that costs a tap, so counting the pieces matters.
+L10 (7/10): Leftover crates are clutter by design; the 6x3 board is cramped. → Remove one leftover crate to cut clutter, or make a leftover crate hold a useful Plate.
+L12 (7/10): The F1 piece and Flower Basket are unrelated clutter, and the 5/5 Spark use is tight for a twist. → Remove the stray bud and basket from the Brass puzzle, or tie the Garland to the crate.
+L13 (7/10): Trap rate 0.33 and 67% casual are hard for the first boss, and one wrong Firework aim is fatal. → Give a 4th Spark so a misaimed Firework is recoverable.
+L15 (7/10): The solution uses 0/2 Sparks, so the Lamp Shelf is a pure safety net and the level is dense but easy. → Cut the budget to 1 Spark so the safety net costs something.
+L16 (7/10): The Needle is an obvious pick with a single knot; trap 0.2. → Add a second near knot that a merge can free, so Needle placement is a real choice.
+L18 (7/10): The aha is mild, and the dupatta sits beside a Dye Stand that is already free. → Add a decoy third merge option that wastes the third spool.
+L22 (7/10): Slightly repeats L14's logic with one new fact; the crate is a distraction. → Remove the crate and put the dye on the board.
+L25 (7/10): Only 2/9 Sparks used, so the budget is pointless and the board is generous. → Cut Sparks to 4.
+L27 (7/10): Clear, but nearly forced at 6 moves. → Add a second chilli trunk so choosing matters.
+L28 (7/10): Mild; the decoy chilli is obvious. → Hold the Marigold in the silver trunk too.
+L29 (7/10): The aha depends on prices that are easily missed, and the 73% casual is not breather-easy. → Show the Spark cost on the generator icon; add 1 Spark.
+L30 (7/10): The crate and smith choice is fine, but the aha is only a cost comparison. → Make the crate lid key look different to highlight it.
+
+level-design score 7/10 — The set is cohesive and well-structured. It has clear one-idea-per-level intent, honest "aha" text, a strong mechanic ladder and good chapter bosses. Weaknesses: the Big Merge "gather five" trick is reused heavily, several breathers are no easier than their neighbours, and a few levels have uneven trap rates or win rates (L8, L19, L21, L26, L53). Many levels are one-solution puzzles, so the set has little replay variety, and the late game leans on pre-planning with very small Spark budgets. About a dozen levels (L1, L2, L8, L12, L15, L19, L25, L35, L40, L48) need small fixes. The rest are solid or good. L62 and L44 are standouts. Overall this is a strong, handcrafted puzzle set that is not yet at top-tier polish.
+curve: Strong, disciplined mechanic ladder: merge, generator, orders, crates, Big Merge, fireworks, thread, needle, recipes, trunks, 3-input recipes, jars, stages, sweep, wrapped blockers, chain orders, finales. Each mechanic is taught alone and then combined, and the chapter bosses are at L13, L26, L39 and L52. Problems:
+(1) The Big Merge "wait for the fifth" aha repeats too often (L8, L9, L10, L12, L13, L20, L24, L25, L34, L37, L39, L41, L46, L55, L60), so it reads as one trick reskinned.
+(2) Casual win rates are uneven. L8 (75% casual, trap 0.5) is a harsh early teach, and L13 and L26 fall to 67% and 43%. Meanwhile L34, L35, L40 and L42, which are meant as breathers, are the easiest levels around them. L19 (56%) and L21 (58%) spike right after the teach levels.
+(3) The easy streak at L1-L7 and L14-L16 is fine, but L27-L30 and L40-L42 have stretches of 97-100% casual with little tension.
+(4) The last third averages roughly 60-65% casual, which is near the ceiling. L64 (33% casual) is a fair finale only if its 18 optimal moves are readable.
+(5) The decoy-generator pattern ("every tap there is a decoy") appears at L3, L31, L62, L63 and L64. It is a good idea but gets repetitive.
+(6) Many solves use only 1-2 Sparks of a large budget (L25 uses 2 of 9, L15 uses 0 of 2), so there is little resource tension. The curve rewards pre-planning over adaptive play, so it sits well below the Royal Match or Flow Free standard for variety of feel.

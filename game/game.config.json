@@ -1,0 +1,9 @@
+{
+  "title": "Merge Bazaar: Festival Homes",
+  "package": "com.jeetech.mergebazaar",
+  "coreMechanic": "Session (3-10 min). 1) Open the home screen and see the next story beat plus the current festival room to restore. 2) Enter a level. Each of the 64 handcrafted levels is a themed board with a preset layout, an objective (usually 2-4 festival orders), and a set of generators, crates and blockers. 3) Tap a generator (costs Spark energy, or free from a cooldown-only "hearth" generator) to produce low-tier items. 4) Drag two or more matching items together to merge them. A preview shows the count and result, and nothing auto-merges. 5) Combine chain items using recipes (cloth + dye = sari, ghee + flour + sugar = sweets). Merge 5 for a Big Merge, which skips a tier and returns a bonus item. 6) Drag finished items onto the order tray to fulfil orders. 7) Clear tangled thread, open trunks and use fireworks as the level requires. 8) Win: earn 1-3 Marigold stars (efficiency, no booster used, tidy board bonus) plus Lamps (soft currency) and chapter pieces. 9) Spend stars and Lamps on the Home: furnish rooms, light festival decorations, unlock the next story beat. 10) Return for the daily gift streak, the daily bazaar order, the heirloom collection and the live festival event. Session hooks: story beat every ~5 levels, a visible next-reward bar on the home screen, and energy regenerating on the local clock. No timers inside levels.",
+  "screens": ["Home (level map)", "Game", "Win", "Fail", "Shop", "Settings"],
+  "monetization": { "rewardedAds": true, "interstitials": true, "removeAdsIap": true },
+  "analyticsEvents": ["level_start", "level_complete", "level_fail"],
+  "_note": "Filled by the Claude Code builder from the GDD + asset manifest."
+}

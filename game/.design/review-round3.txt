@@ -1,0 +1,78 @@
+PASS level_intents: all 64 levels have a specific intent
+PASS no_filler_levels: no trivial filler levels after the tutorial
+FAIL level_design: level-design review 7.4/10 (bar 8), 2 level(s) below 6/10: This is a strong, well-explained set. Nearly every level has a stated aha, and the solver facts match the intents. The best levels (L24, L29, L35, L53, L54, L62, L64) reach the quality of the genre leaders, with clear "I see it now" moments.
+
+Main weaknesses:
+- Two tricks are repeated too often: Big Merge (the "gather five" idea) and the decoy generator or crate.
+- Several teach and story levels carry high hidden-trap rates: L20 (0.5), L25 (0.5), L21 (0.4), L31 (0.33), L47 (0.33), L16 (0.2). A player's first natural move can silently doom the level.
+- L25's intent does not match the board.
+- Boss difficulty is inconsistent: L13 and L39 are too soft, while L59 is an outlier spike.
+- The last-third casual average is about 65.4%, just over the 65% cap.
+- Some breathers and teach levels are not easier than their neighbours (L48, L58).
+
+Fix those and the set is a solid 8. Curve: Pacing is mostly sound. Mechanics arrive one at a time and then combine: merge and generator (1-3), crates (4-7), Big Merge (8-10), Fireworks (11-13), thread (14-17), recipes (18-22), Needle and breather (16, 23), Big Merge plus recipe (24-26), trunks and keys (27-30), 3-input recipes (31-34), trunk plus Big Merge plus key (35-39), jars (40-43), staged orders (44-46), Sweep (47-51), wrapped trunks (53-56), mixed and chain orders (57-61), finale (62-64). Boss levels land every 13 levels (13, 26, 39, 52), and the finale uses everything. Breathers are well placed at 23, 34, 42, 48 and 60.
+
+Problems:
+1. Big Merge is overused. It is the aha of about 15 levels (8, 9, 10, 12, 13, 20, 24, 25, 37, 39, 41, 46, 55, plus 34/60 in lighter form). "Gather five, merge once, the bonus is the next input" repeats from L9 onward. L8 to L10 are three in a row, which is too many. L12 and L55 share the same "crate makes the fifth piece" trap.
+2. "Decoy generator, so don't tap it" is the aha in L2, 3, 7, 15, 29, 31, 55, 62 and 63. This is the cheapest trick in the set. Because the Spark budgets are tight, several of these decoys are a fatal tap rather than a lost star.
+3. Boss difficulty is uneven. L13 (87% casual) and L39 (81%) are soft for bosses. L26 (57%) and L52 (49%) land correctly. L59 (42%) is a "practise" level that is the hardest in its neighbourhood, between L58 (69%) and L60 (81%).
+4. The last-third casual average is about 65.4%. That is just over the 65% cap, so lift a few late levels slightly. The levels to ease are L59 and L64 (a little), or raise L47/L48/L60.
+5. Hidden-fatal-move rates are too high in several teach and early levels: L20 (0.5), L25 (0.5), L21 (0.4), L31 (0.33), L16 (0.2) and L47 (0.33). A teach level should never punish the player's first natural guess.
+6. L25's intent does not match its board, which has no middle spool. Its Big Merge plan also cannot fill the Cotton Cloth order.
+7. The Dye Stand costs 2 Sparks and is introduced at L19. It is then used as a price decoy in L21, L26 and L59, which is fine, but tutorialise Spark prices earlier.
+8. There is no real difficulty rise from L1 to L12, where every level wins at about 90% or more. L17 (67%) and L19 (62%) are early spikes next to 82-99% neighbours.
+9. Late levels run long. L58 (14 moves) is a teach, and L38, L61, L63 and L64 (14-17 moves) are long for a 3-10 minute session. This is acceptable for finales but heavy for L58.
+
+Overall the set is well-crafted and cohesive, with strong late-game aha levels (L24, L29, L35, L53, L54, L62). It needs de-duplication of the Big Merge and decoy tricks, plus a fairness pass on the hidden-fatal levels.
+REDESIGN THESE LEVELS (keep the ones not listed):
+L20 (5/10): Trap rate 0.5: pairing any buds is silently fatal with 2 Sparks, and the nearest-empty tap drop decides where the fifth bud lands, so the player cannot reliably land the centre bud. The story beat is the worst place for a guess-the-fatal-move level. → Add a third Spark and lay out the buds so only one cell is the obvious Big Merge target. Preview the ring on long-press.
+L25 (5/10): The intent says to land the ring 'on the middle spool', but the middle is a knotted cloth. The Big Merge also yields C3 Silk Bolt plus C2, so the cloth order cannot be filled, and the pair-merge route with 0 Sparks is what actually wins. Trap 0.5. → Change the orders to Sari x2 + Silk Bolt x1, and place a free spool at the centre. Then the Big Merge pays the Silk Bolt and a cloth, and the knotted cloth plus the bonus make the two Saris.
+L10 (6/10): Third Big Merge level in four; the plan is nearly the same as L8 and L9 with a decoy lamp crate. Casual 89% adds to an easy run. → Remove Big Merge here; make it a crates-and-orders story level with a branching choice, and move Big Merge-as-bonus to L12.
+L16 (6/10): Only 1 Spark, so one early Loom tap is fatal (trap 0.2) in a teach level, and the Needle is mandatory with no choice. Casual 83%. → Give 2 Sparks so a wrong tap is forgiven, or make the Needle optional with a cost to skipping it.
+L19 (6/10): The aha is bookkeeping ('build cloth first'). Casual 62% is on the hard side for a practise level after only one recipe level. → Add one more Spark and reframe the aha as a dye-pot count, or move it after L21.
+L21 (6/10): Trap rate 0.4: the Dye Stand tap (2 Sparks) is a tempting fatal buy, and a merge in the wrong place is lost too. → Give 3 Sparks or lock the Dye Stand to its position as clutter. Keep the idea of freeing the dye with its own cloth.
+L31 (6/10): Trap 0.33: the Sparks are exactly 2, and a decoy chilli-stall tap is fatal in a teach level. → Add one Spark or remove the second stall.
+L46 (6/10): Another Big Merge 'bonus is the input' level, and it has only 1 choice at the start; it plays on rails. → Replace with a distinct stage idea, e.g. a stage that consumes the dish from the previous stage plus a trap crate.
+L48 (6/10): Casual 83% is not easier than L47 at 87%, so it does not read as a breather. Sweep repeats with no new idea. → Use j instead of j2 jars and add a spare Spark.
+L55 (6/10): Near-repeat of L12's 'fifth piece triggers Big Merge' trap, plus yet another decoy Sweet Kitchen. Trap 0.2. → Replace with a new idea (e.g. staged order that pays a piece onto a crowded board) and keep the crate trap only once.
+L58 (6/10): A teach with 14 moves and 5/5 Sparks and no slack; casual 69% is hard for a teach. → Shrink the board, drop one Toran Lamp build and add a spare Spark.
+L59 (6/10): Casual 42% is an outlier spike between 69% and 81%, and the correct order (dye a single spool first) is not signposted. → Pre-place one cloth, add a Spark, or show the opening order on the tray.
+L2 (7/10): Decoy-generator trick starts here and recurs in about 10 levels; the intent is true but the aha is a counting exercise. → Keep it, but save the decoy trick for later levels with real stakes.
+L3 (7/10): The 13-move solution is long for level 3, and the waste-tap decoy is a third consecutive 'don't tap the wrong generator' lesson. → Trim to two orders with a shorter route, or give the Sweet Kitchen a real use.
+L4 (7/10): Mostly arithmetic. The wrong-chain Laddu crate is a decoy again. → Make the sweets crate hold something useful for a later order so every crate is a real choice.
+L5 (7/10): The aha duplicates L4's 'a crate saves taps' idea. → Swap the crate for a pre-built Laddu Plate and make the decision about which corner Diyas to merge.
+L6 (7/10): Solid but plain. Three crates plus the split idea is a bit busy for a 'practise'. → Remove the Marigold order and the F1 piece to keep the split idea clean.
+L7 (7/10): The crate trap is subtle. Skipping the laddu crate saves nothing, but it can cost the whole budget (4/4 Sparks), so a natural purchase is fatal. → Add a fifth Spark so the trap costs the star rather than the level.
+L9 (7/10): Near-clone of L8 with flowers. It is the second consecutive 'gather five' level. → Swap L9 with a thread or crate level, or make the bonus tier-mismatched so the player must route it.
+L15 (7/10): Good aha but 94% casual, so it forms an easy pair with L14. Sparks 2 with 0 used means the safety net is never relevant. → Remove the Lamp Shelf's second Spark to make the junk-merge decision matter.
+L17 (7/10): Casual 67% is an early spike next to 83% and 82%. The 'merge beside the loom' step needs a staging drag the player may not see. → Add a faint highlight on the loom's neighbour cells, or place two spools one cell from the loom.
+L18 (7/10): Thin board, easily solved. Fine for a teach. → Add a decoy Dye Pot tap in the same shape so the 'spool you don't merge' aha has a wrong option.
+L22 (7/10): Trap 0.25. Good idea, but it is the same free-with-the-recipe trick as later jar levels. → Mark the recipe as a pull in the preview to make the teach explicit.
+L23 (7/10): The Needle is mandatory (2 Sparks), so it is a guided exercise rather than a free-play breather. → Add a spare Spark and an alternative so it is a real breather.
+L27 (7/10): The decoy chilli trunks are an easy mistake in the corners, but it is a fine first trunk. → Keep it.
+
+level-design score 7.4/10 — This is a strong, well-explained set. Nearly every level has a stated aha, and the solver facts match the intents. The best levels (L24, L29, L35, L53, L54, L62, L64) reach the quality of the genre leaders, with clear "I see it now" moments.
+
+Main weaknesses:
+- Two tricks are repeated too often: Big Merge (the "gather five" idea) and the decoy generator or crate.
+- Several teach and story levels carry high hidden-trap rates: L20 (0.5), L25 (0.5), L21 (0.4), L31 (0.33), L47 (0.33), L16 (0.2). A player's first natural move can silently doom the level.
+- L25's intent does not match the board.
+- Boss difficulty is inconsistent: L13 and L39 are too soft, while L59 is an outlier spike.
+- The last-third casual average is about 65.4%, just over the 65% cap.
+- Some breathers and teach levels are not easier than their neighbours (L48, L58).
+
+Fix those and the set is a solid 8.
+curve: Pacing is mostly sound. Mechanics arrive one at a time and then combine: merge and generator (1-3), crates (4-7), Big Merge (8-10), Fireworks (11-13), thread (14-17), recipes (18-22), Needle and breather (16, 23), Big Merge plus recipe (24-26), trunks and keys (27-30), 3-input recipes (31-34), trunk plus Big Merge plus key (35-39), jars (40-43), staged orders (44-46), Sweep (47-51), wrapped trunks (53-56), mixed and chain orders (57-61), finale (62-64). Boss levels land every 13 levels (13, 26, 39, 52), and the finale uses everything. Breathers are well placed at 23, 34, 42, 48 and 60.
+
+Problems:
+1. Big Merge is overused. It is the aha of about 15 levels (8, 9, 10, 12, 13, 20, 24, 25, 37, 39, 41, 46, 55, plus 34/60 in lighter form). "Gather five, merge once, the bonus is the next input" repeats from L9 onward. L8 to L10 are three in a row, which is too many. L12 and L55 share the same "crate makes the fifth piece" trap.
+2. "Decoy generator, so don't tap it" is the aha in L2, 3, 7, 15, 29, 31, 55, 62 and 63. This is the cheapest trick in the set. Because the Spark budgets are tight, several of these decoys are a fatal tap rather than a lost star.
+3. Boss difficulty is uneven. L13 (87% casual) and L39 (81%) are soft for bosses. L26 (57%) and L52 (49%) land correctly. L59 (42%) is a "practise" level that is the hardest in its neighbourhood, between L58 (69%) and L60 (81%).
+4. The last-third casual average is about 65.4%. That is just over the 65% cap, so lift a few late levels slightly. The levels to ease are L59 and L64 (a little), or raise L47/L48/L60.
+5. Hidden-fatal-move rates are too high in several teach and early levels: L20 (0.5), L25 (0.5), L21 (0.4), L31 (0.33), L16 (0.2) and L47 (0.33). A teach level should never punish the player's first natural guess.
+6. L25's intent does not match its board, which has no middle spool. Its Big Merge plan also cannot fill the Cotton Cloth order.
+7. The Dye Stand costs 2 Sparks and is introduced at L19. It is then used as a price decoy in L21, L26 and L59, which is fine, but tutorialise Spark prices earlier.
+8. There is no real difficulty rise from L1 to L12, where every level wins at about 90% or more. L17 (67%) and L19 (62%) are early spikes next to 82-99% neighbours.
+9. Late levels run long. L58 (14 moves) is a teach, and L38, L61, L63 and L64 (14-17 moves) are long for a 3-10 minute session. This is acceptable for finales but heavy for L58.
+
+Overall the set is well-crafted and cohesive, with strong late-game aha levels (L24, L29, L35, L53, L54, L62). It needs de-duplication of the Big Merge and decoy tricks, plus a fairness pass on the hidden-fatal levels.

@@ -1,0 +1,60 @@
+PASS level_intents: all 64 levels have a specific intent
+PASS no_filler_levels: no trivial filler levels after the tutorial
+PASS level_design: level-design review 8/10 (bar 8), 0 level(s) below 6/10: This is a strong, unusually well-authored set. Almost every level has one nameable idea, a board that shows it, and an AHA that is true of the board. The early game (L1-L10) is close to Royal Match tutorial quality. Counting the order tray, decoy generators, and "don't merge everything up" are all clear, readable and fair. The late game (L45-L64) layers jars, staged orders, key tiers, Big Merge and chain orders into real finale-grade puzzles. The late-third casual average is about 64.6%, which only just meets the ≤65% target. Skilled rates stay inside 50-95% apart from a few at 96-99%, and no level breaks the two-easy-in-a-row rule after L5.
+
+Weaknesses:
+- **Soft consequences.** Nearly every "trap" costs only the efficiency star ("never the level"). That keeps trap rate at 0, but it dulls the aha for casual players, who win anyway without learning.
+- **Repeated aha shapes.** The key-to-right-lock lesson appears in L27, L28, L30 and L36. The "merge beside the jar" lesson appears in 13+ levels (L24, 40, 42-45, 47, 49-52, 62-64).
+- **Two unfair-ish spots.** L15 has a 14% trap rate and L11 has 8%. These are the only hidden fatal early moves in the set.
+- **Spikes and soft spots.** L58 is a spike for a "practise" level. L52 has an unverifiable optimum ("> search cap"). L48 is a long grind for a breather. L56's Sweep has no decision in it.
+- **Pacing.** Story beats are far too sparse after L33: the doc promises one every ~5 levels, but L33 to L60 has none. L43 introduces Sweep too late.
+
+The set is in great shape and needs targeted fixes, not a redesign. Curve: Order of introduction is mostly right:
+- Tap, merge, order tray and crates come first (L1-L7).
+- Big Merge arrives at L8 and is practised straight away at L9, L10, L12 and L13.
+- The L11 Firework teach sits on a no-generator board, then is reused in the L13 boss.
+- Thread (L14-L17), recipes (L18-L19), jars (L24), trunks (L27), 3-input recipes (L31), staged orders (L41), Sweep (L43), wrapped trunks (L53) and chain orders (L57) each arrive alone, then combine. Bosses at L13, L26, L39, L52 and the L64 finale test mastery.
+- The teach-practise-twist-combine rhythm is clear and repeatable.
+
+Problems:
+1. Chapter 5 (L53-L64) introduces two brand-new mechanics (wrapped trunks, chain orders) after the L52 boss. It then asks the finale to combine them with everything else after only about 5 practise levels. The finale (L62-64) is fair, but the jump is steep, and L58 (49% casual) is a spike.
+2. Sweep appears once at L43 and again at L50, L52 and L56. Needle appears at L17, L26 and L47. Firework appears only at L11 and L13. Introduce Sweep around L30-L35, and add one more Firework level mid-game.
+3. Story beats are L5, L10, L21, L30, L33 and L60. There are gaps of 11 and 27 levels, against the doc's "~5 levels" promise. Add story beats at roughly L15, L38, L45 and L55.
+4. The trunk and key block (L27-L39) is 13 levels with four near-identical "match the key tier" lessons. Cut or merge L28/L30/L36 differently, or give each a distinct second idea.
+5. Breathers are placed well: L20, L34, L48 and L55 each follow a harder run. L48 is too long and too dull to feel like one.
+6. Difficulty is generally on target:
+   - Levels 1-3 are all at or above 97% casual.
+   - The last-third casual average is about 64.6%.
+   - Easy levels are never more than two in a row after L5.
+   - The L49 drop (58%) after the L48 breather (100%) is a sharp but acceptable swing.
+   - L45 (57%) and L51 (53%) are slightly harder than their neighbours.
+
+level-design score 8/10 — This is a strong, unusually well-authored set. Almost every level has one nameable idea, a board that shows it, and an AHA that is true of the board. The early game (L1-L10) is close to Royal Match tutorial quality. Counting the order tray, decoy generators, and "don't merge everything up" are all clear, readable and fair. The late game (L45-L64) layers jars, staged orders, key tiers, Big Merge and chain orders into real finale-grade puzzles. The late-third casual average is about 64.6%, which only just meets the ≤65% target. Skilled rates stay inside 50-95% apart from a few at 96-99%, and no level breaks the two-easy-in-a-row rule after L5.
+
+Weaknesses:
+- **Soft consequences.** Nearly every "trap" costs only the efficiency star ("never the level"). That keeps trap rate at 0, but it dulls the aha for casual players, who win anyway without learning.
+- **Repeated aha shapes.** The key-to-right-lock lesson appears in L27, L28, L30 and L36. The "merge beside the jar" lesson appears in 13+ levels (L24, 40, 42-45, 47, 49-52, 62-64).
+- **Two unfair-ish spots.** L15 has a 14% trap rate and L11 has 8%. These are the only hidden fatal early moves in the set.
+- **Spikes and soft spots.** L58 is a spike for a "practise" level. L52 has an unverifiable optimum ("> search cap"). L48 is a long grind for a breather. L56's Sweep has no decision in it.
+- **Pacing.** Story beats are far too sparse after L33: the doc promises one every ~5 levels, but L33 to L60 has none. L43 introduces Sweep too late.
+
+The set is in great shape and needs targeted fixes, not a redesign.
+curve: Order of introduction is mostly right:
+- Tap, merge, order tray and crates come first (L1-L7).
+- Big Merge arrives at L8 and is practised straight away at L9, L10, L12 and L13.
+- The L11 Firework teach sits on a no-generator board, then is reused in the L13 boss.
+- Thread (L14-L17), recipes (L18-L19), jars (L24), trunks (L27), 3-input recipes (L31), staged orders (L41), Sweep (L43), wrapped trunks (L53) and chain orders (L57) each arrive alone, then combine. Bosses at L13, L26, L39, L52 and the L64 finale test mastery.
+- The teach-practise-twist-combine rhythm is clear and repeatable.
+
+Problems:
+1. Chapter 5 (L53-L64) introduces two brand-new mechanics (wrapped trunks, chain orders) after the L52 boss. It then asks the finale to combine them with everything else after only about 5 practise levels. The finale (L62-64) is fair, but the jump is steep, and L58 (49% casual) is a spike.
+2. Sweep appears once at L43 and again at L50, L52 and L56. Needle appears at L17, L26 and L47. Firework appears only at L11 and L13. Introduce Sweep around L30-L35, and add one more Firework level mid-game.
+3. Story beats are L5, L10, L21, L30, L33 and L60. There are gaps of 11 and 27 levels, against the doc's "~5 levels" promise. Add story beats at roughly L15, L38, L45 and L55.
+4. The trunk and key block (L27-L39) is 13 levels with four near-identical "match the key tier" lessons. Cut or merge L28/L30/L36 differently, or give each a distinct second idea.
+5. Breathers are placed well: L20, L34, L48 and L55 each follow a harder run. L48 is too long and too dull to feel like one.
+6. Difficulty is generally on target:
+   - Levels 1-3 are all at or above 97% casual.
+   - The last-third casual average is about 64.6%.
+   - Easy levels are never more than two in a row after L5.
+   - The L49 drop (58%) after the L48 breather (100%) is a sharp but acceptable swing.
+   - L45 (57%) and L51 (53%) are slightly harder than their neighbours.

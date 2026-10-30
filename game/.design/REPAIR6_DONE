@@ -1,0 +1,46 @@
+Merge Bazaar level repair — round 6 (2026-10-29)
+
+RESULT: level self-check NOT passed. Final review 7.6/10 (bar 8), 0 levels below 6/10, level-review.ts exit 1
+(level_intents PASS, no_filler_levels PASS, level_design FAIL on score). The final set scored 7.6 on two runs in a row.
+Review history this round (each verdict in .design/review-r6*.txt, each set snapshotted):
+  r6a 7.7 (L19 5, L59 5)          -> .design/best-7.7-r6
+  r6b 7.0 (L55 5)                 -> .design/best-7.0-r6b
+  r6c 8.0 (L59 5, so still FAIL)  -> .design/best-8.0x-r6c
+  r6d 7.5 (0 below 6)             -> .design/best-7.5-r6d
+  r6e 7.6 / rerun 7.6 (0 below 6) -> .design/best-7.6-r6e  = SHIPPED (current workspace files)
+Pre-round shipped set: .design/shipped-7.4-qa
+
+Hard gates on the shipped set (all run by me on the final files):
+  npx tsc --noEmit   -> 0 errors
+  npm run validate   -> exit 0, 64/64 solvable, difficulty rises (early ~49 -> late ~230)
+  npm run playtest   -> L1-3 casual 100/97/93%; mid third 0.837; last third casual 0.647, skilled 0.899;
+                        easy (>=90%) share after L5 0.22, no run of 3, no spike >35, no wall, rho -0.65,
+                        duplicates [] (levels_unique). Final JSON line copied to .agf/playtest.json.
+  npm run levels     -> exit 0, ~15 s; max BFS explored 24,260 (L26), nothing capped
+
+Levels changed (per the QA review, by hand):
+  L3 Marigold not Garland, 4x3, ~9 moves | L5 4x4, exactly 3 Sparks | L6 c:L1 crate removed, 4x4 | L9 new: Big Merge one
+  tier up (climb buds into the fifth Marigold -> Festival Arch + Garland) | L14 decoy Clay pair | L16 two knots, one
+  Needle, 2 Sparks | L17 double-knotted Loom with a junk Clay pair to carry in | L18 Dye Pot on the board | L19 second Dye
+  Pot on the board, 7 Sparks | L20 3 Sparks | L21 both dyes knotted, no Dye Stand | L23 new garland-rangoli breather |
+  L24 dye knotted, freed by the Big Merge ring | L25 jar replaced by a knot (no jar before the L40 teach) | L26 5 |
+  L30 5x4, silver trunk beside the crate | L32<->L33 swapped (masala twist now follows its teach); banner teach builds both
+  halves | L38 crate = second valid route | L39 6 | L40 no bare ground | L41 5x4, 4 Sparks | L43<->L44 swapped (Pongal
+  teach with the Ghee Pot on the board; jars+knots combine) | L45 Hearth-recipe crack | L46 new staged twist: a stage you
+  must not pre-build (Laddu layout, not L12's) | L48 new short jar breather (lamp merges crack the jar) | L49 Spice
+  Stall removed, turmeric on the board | L51 "a delivered dish is gone" made explicit + hint | L52 Laddu on the board,
+  Sweep optional, 1 spare | L55 kept | L57 = chain-order teach (moved up) | L58 = Chain of favours | L59 new: the spice
+  caravan (chain-order masala whose reward is the FIFTH key for a Big Merge; knotted keys so the trap is not a first
+  move, no Key Smith, 1 spare) | L60 rebuilt without Big Merge risk, now a story beat | L62 one far Clay Diya -> third
+  shelf tap. "Two tins" (old L57) removed.
+  Every Spark claim re-audited against tuned budgets; proofs are now FEWEST-Spark lines (new scripts/solve-min.ts), so
+  describe()'s "x/N Sparks used" shows the real spare. Fixed stale claims in L34 ("A Spark to spare" at 1/1), L41, L54,
+  L27 ("three trunks" -> four). docs/LEVELS.md regenerated (scripts/levels-doc.ts, arcs updated).
+
+Why it stalls below 8 (factory issue to report): the review and the playtest gate pull against each other. Each review
+asks for slack on late hard levels (L49, L52, L57, L59, L60...) and lighter teaches/breathers, while the playtest gate
+caps the last-third casual mean at 65% — the shipped set sits at 0.647, so every Spark of slack added late has to be
+paid back by making another late level harder. Each verdict also names a different set of 6-7/10 levels (often
+reversing the previous run's advice: L16 Needle optional vs forced, L39 5 vs 6 Sparks, L55 slack vs trap), with
+±0.5 noise. Same finding as round 5 (Merge Bazaar / Nonogram memory). The recurring themes left: Big Merge
+"fifth piece" overuse (L12/L37/L46/L59), small boards, no breather between L49 and L61, soft bosses L13/L39.

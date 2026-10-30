@@ -1,0 +1,60 @@
+PASS level_intents: all 64 levels have a specific intent
+PASS no_filler_levels: no trivial filler levels after the tutorial
+FAIL level_design: level-design review 7.4/10 (bar 8), 0 level(s) below 6/10: This is a thoughtful, well-taught set. Every level has a stated purpose that the board delivers. The ladder (merge, crates, Big Merge, fireworks, thread, needle, recipes, keys, jars, sweep, stages and chains) adds one idea at a time. Weak points: the "count the pieces" shape repeats, and Big Merge is overused. Several breathers (L34, L42, L48, L55) are not easier than their neighbours. Fatal early traps remain in L11, L15 and L56. Late levels are overloaded: L45, L49, L51, L52 and L64. L52 is unverified because its solver hit the search cap. The late casual rate averages roughly 60%, which is on target. Curve: Strong, well-sequenced teaching spine: merge, orders, crates, Big Merge, fireworks, thread, needle, recipes, keys, jars, sweep, staged and chain orders. Each is introduced alone and then combined, with a boss at L13, L26, L39, L52 and L64. The weaknesses are these.
+
+1) Every level is a tiny single-insight "count the pieces" puzzle with a fixed solution. The stated budgets are often exact (Sparks 2/2, 3/3), so the set reads as worksheet-like against Royal Match or Flow Free variety. Almost every level is also a "don't merge by habit" trap.
+
+2) Big Merge is overused as the aha. It appears in L8, 9, 10, 12, 13, 21, 25, 37, 39, 46, 56, 59 and 60, so it goes stale.
+
+3) Breathers are mis-placed or too thin. L20 is good. L34 is a very hard-to-parse board right after a trunk run. L42 is a "breather" with a jar-plus-trunk mechanic. L48 and L55 are fine but are not clearly easier than their neighbours, and L55 casual 89% is only slightly above.
+
+4) Early flatness. L1-L7 are all 99-80% and L8 is 100%, so levels 5-8 have little tension. The easy-run rule is respected only because L6, L7 and L5 dip below 90%.
+
+5) Late curve: the casual average over the last third (L43-L64) is roughly 60%, on target. Spikes: L45, L49, L51, L52, L54 and L64 (43% casual, 77% skilled) are hard stacked-combination levels. L64 as a finale with casual 43% is acceptable but punishing. L52 has a 'search cap' solution, so its fairness is unverified.
+
+6) Late hand-holding. Many descriptions say 'the start hint says it outright', which means the fix is delivered by text rather than by board readability.
+
+7) Gaps in the pacing of the plan. L62-L64 finales are three dense levels back to back. L62 is clearly a "full board" test but its aha is an obscure mechanic (nearest empty cell), and there is no breather before them.
+REDESIGN THESE LEVELS (keep the ones not listed):
+L19 (6/10): The aha is 'tap nothing'. Only 1 of 5 Sparks is used. The slack is huge and the level has 12 empty cells of space and clutter. → Cut the budget to 2 Sparks and drop a dye pot so the expensive stand tempts.
+L34 (6/10): Casual 100%, but the board is a 7x7 mostly bare ground, and it follows a medium-hard stretch. Visually pretty but only 1 Spark and a long 8-move line is not a rest. → Keep the lantern and shorten the sequence to one Toran merge.
+L42 (6/10): It introduces a jar-holds-key twist, which is not a rest, and has two Sparks of exact work. → Make the trunk key free and keep the jar as a pure rest, or relabel as a twist.
+L52 (6/10): Solver exceeds the search cap, so it is unverified for fairness. Overstuffed with 3 jars, a wall, thread, a crate and a stage chain. → Remove one jar and the crate and re-verify.
+L2 (7/10): A tiny count puzzle; the decoy is mild. → Fine as is; could swap the decoy basket for one more visible piece.
+L3 (7/10): Little tension; 99% win. → OK as an onboarding level; no change needed.
+L4 (7/10): Casual 91%; the aha (compare the lid with a tap) is decent but the board has 3 crates and many decoys. → Remove one decoy crate to make the lesson sharper.
+L5 (7/10): Only one real aha and two Sparks exactly; reads as mechanical. → Add a third tap-capable choice to make the biggest-piece idea a real choice.
+L15 (7/10): Trap rate 0.14 means a decoy merge is fatal with no Undo help in the stats; no Loom. → Add a third Spark or a Loom tap to make the decoy recoverable.
+L25 (7/10): Casual 70% mid-game spike. Near-copy of L21's idea. → Make it a different shape (e.g. off-centre drop) or move later.
+L28 (7/10): Chilli decoys are repetitive vs L27. → Replace one chilli trunk with an order-relevant one.
+L32 (7/10): Three options and the fewest-moves line differs from the intent; a lot of text for a modest aha. → Remove the 2-Spark stall so the choice is queue vs key.
+L36 (7/10): Similar to L30's key-tier matching. → Merge with L30 or add a new constraint.
+L38 (7/10): Exact 4/4 Sparks with a queue; fiddly counting. → Give one spare Spark.
+L41 (7/10): The locked-card idea is simple; decoy is only an extra tap. → OK; add a visible tempting decoy.
+L45 (7/10): Casual 57% and a hidden Hearth-position decoy; heavy to read. → Remove the second Hearth.
+L47 (7/10): Very tight, 66% casual. Only one correct cell, which verges on guessing. → Add a spare Spark.
+L48 (7/10): A 13-move plan is not a rest. → Remove the third ring order.
+L49 (7/10): Casual 58%; pile-up of 3 systems and decoy stall. → Drop the Spice Stall decoy.
+L51 (7/10): Casual 53%; a rule about delivered dishes is easy to miss. → Show a visible pongal-count hint.
+L54 (7/10): Casual 53% with many decoys; the unwrap rule is hard to read. → Remove the Lamp Shelf decoy.
+L55 (7/10): A 9-move 3-system plan is not restful. → Remove the crate and give the key free.
+L56 (7/10): Trap rate 0.2, the highest in the set, a fatal early pair-merge. → Add a spare Spark.
+L58 (7/10): Casual 59%; 7 Sparks and 4 used is slack. → Cut to 5 Sparks.
+L61 (7/10): A long 14-move rail; the aha is a fixed order. → Add a decoy that lets one choice matter.
+
+level-design score 7.4/10 — This is a thoughtful, well-taught set. Every level has a stated purpose that the board delivers. The ladder (merge, crates, Big Merge, fireworks, thread, needle, recipes, keys, jars, sweep, stages and chains) adds one idea at a time. Weak points: the "count the pieces" shape repeats, and Big Merge is overused. Several breathers (L34, L42, L48, L55) are not easier than their neighbours. Fatal early traps remain in L11, L15 and L56. Late levels are overloaded: L45, L49, L51, L52 and L64. L52 is unverified because its solver hit the search cap. The late casual rate averages roughly 60%, which is on target.
+curve: Strong, well-sequenced teaching spine: merge, orders, crates, Big Merge, fireworks, thread, needle, recipes, keys, jars, sweep, staged and chain orders. Each is introduced alone and then combined, with a boss at L13, L26, L39, L52 and L64. The weaknesses are these.
+
+1) Every level is a tiny single-insight "count the pieces" puzzle with a fixed solution. The stated budgets are often exact (Sparks 2/2, 3/3), so the set reads as worksheet-like against Royal Match or Flow Free variety. Almost every level is also a "don't merge by habit" trap.
+
+2) Big Merge is overused as the aha. It appears in L8, 9, 10, 12, 13, 21, 25, 37, 39, 46, 56, 59 and 60, so it goes stale.
+
+3) Breathers are mis-placed or too thin. L20 is good. L34 is a very hard-to-parse board right after a trunk run. L42 is a "breather" with a jar-plus-trunk mechanic. L48 and L55 are fine but are not clearly easier than their neighbours, and L55 casual 89% is only slightly above.
+
+4) Early flatness. L1-L7 are all 99-80% and L8 is 100%, so levels 5-8 have little tension. The easy-run rule is respected only because L6, L7 and L5 dip below 90%.
+
+5) Late curve: the casual average over the last third (L43-L64) is roughly 60%, on target. Spikes: L45, L49, L51, L52, L54 and L64 (43% casual, 77% skilled) are hard stacked-combination levels. L64 as a finale with casual 43% is acceptable but punishing. L52 has a 'search cap' solution, so its fairness is unverified.
+
+6) Late hand-holding. Many descriptions say 'the start hint says it outright', which means the fix is delivered by text rather than by board readability.
+
+7) Gaps in the pacing of the plan. L62-L64 finales are three dense levels back to back. L62 is clearly a "full board" test but its aha is an obscure mechanic (nearest empty cell), and there is no breather before them.

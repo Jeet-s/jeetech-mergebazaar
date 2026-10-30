@@ -1,0 +1,161 @@
+{
+  "style": "Painterly-3D hybrid in the style of premium cozy mobile games. Chunky, softly bevelled forms are rendered with gouache-like colour and a hand-painted look, not photoreal. Light is a warm marigold key from the upper left, with a cool indigo-teal bounce in the shadows. Glowing diyas and string lamps act as practical lights. Materials read clearly: polished brass with a creamy specular streak, matte block-printed cotton, glossy silk with a soft sheen, translucent glass, warm terracotta, and sugar-glazed sweets. Edges are rounded and smooth, with a thin darker-hue outline inside each shape rather than black. Shading uses three soft tones with a subtle rim light and a gentle ambient-occlusion contact shadow under each object. Depth comes from layered backgrounds with atmospheric haze and bokeh lamps, and from raised, inset UI plates. The mood is unhurried, nostalgic, warm and festive, with high saturation balanced by creamy neutrals. Every merge tier is distinguished by silhouette and a pattern motif (dot, stripe, leaf, star) as well as colour, so it stays readable for colour-blind players. Nothing is flashing or harsh, and the overall feel is ASMR-soft. The goal is to match the polish of Royal Match and Homescapes, and the calm composition of Monument Valley.",
+  "palette": [
+    "#F6A81C",
+    "#2B2F77",
+    "#D8433B",
+    "#1F9E8F",
+    "#FFF1D6",
+    "#7A3E2A"
+  ],
+  "ui_palette": {
+    "primary": "#F6A81C",
+    "primaryDark": "#C26E0A",
+    "secondary": "#2B2F77",
+    "secondaryDark": "#1A1C4D",
+    "accent": "#1F9E8F",
+    "accentDark": "#136B61",
+    "bgTop": "#3A3F96",
+    "bgBottom": "#F2A65A",
+    "ink": "#3A1F14"
+  },
+  "assets": [
+    {
+      "id": "bg_courtyard_dusk",
+      "kind": "background",
+      "file": "bg_courtyard_dusk.png",
+      "usage": "Gameplay and splash background",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "bg_home_room",
+      "kind": "background",
+      "file": "bg_home_room.png",
+      "usage": "Home restoration view",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "bg_bazaar_street",
+      "kind": "background",
+      "file": "bg_bazaar_street.png",
+      "usage": "Level select and chapter map",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "board_frame",
+      "kind": "ui",
+      "file": "board_frame.png",
+      "usage": "Board frame around the 7x9 grid",
+      "width": 435,
+      "height": 512
+    },
+    {
+      "id": "tile_cell",
+      "kind": "ui",
+      "file": "tile_cell.png",
+      "usage": "Board cell tile",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "piece_cloth_sari",
+      "kind": "sprite",
+      "file": "piece_cloth_sari.png",
+      "usage": "Cloth chain pieces (cloth to sari)",
+      "width": 512,
+      "height": 357
+    },
+    {
+      "id": "piece_sweets_box",
+      "kind": "sprite",
+      "file": "piece_sweets_box.png",
+      "usage": "Sweets chain piece",
+      "width": 512,
+      "height": 430
+    },
+    {
+      "id": "piece_diya_brass",
+      "kind": "sprite",
+      "file": "piece_diya_brass.png",
+      "usage": "Diya chain piece",
+      "width": 497,
+      "height": 512
+    },
+    {
+      "id": "piece_spice_tin",
+      "kind": "sprite",
+      "file": "piece_spice_tin.png",
+      "usage": "Spice chain piece",
+      "width": 447,
+      "height": 512
+    },
+    {
+      "id": "generator_hearth",
+      "kind": "sprite",
+      "file": "generator_hearth.png",
+      "usage": "Free cooldown generator",
+      "width": 506,
+      "height": 512
+    },
+    {
+      "id": "blocker_thread_trunk",
+      "kind": "sprite",
+      "file": "blocker_thread_trunk.png",
+      "usage": "Blockers: tangled thread and trunk",
+      "width": 512,
+      "height": 480
+    },
+    {
+      "id": "hud_panel",
+      "kind": "ui",
+      "file": "hud_panel.png",
+      "usage": "Top HUD and order tray panel",
+      "width": 512,
+      "height": 355
+    },
+    {
+      "id": "btn_primary",
+      "kind": "ui",
+      "file": "btn_primary.png",
+      "usage": "Primary button plate",
+      "width": 512,
+      "height": 488
+    },
+    {
+      "id": "btn_secondary",
+      "kind": "ui",
+      "file": "btn_secondary.png",
+      "usage": "Secondary button plate",
+      "width": 512,
+      "height": 480
+    },
+    {
+      "id": "icon_lamp_star",
+      "kind": "ui",
+      "file": "icon_lamp_star.png",
+      "usage": "Reward icons for Lamps and Marigold stars",
+      "width": 512,
+      "height": 254
+    },
+    {
+      "id": "fx_sparkle_glow",
+      "kind": "fx",
+      "file": "fx_sparkle_glow.png",
+      "usage": "Merge sparkle and glow",
+      "width": 474,
+      "height": 512
+    },
+    {
+      "id": "logo",
+      "kind": "ui",
+      "file": "logo.png",
+      "usage": "the game logo — title/home screen and anywhere the name appears",
+      "width": 900,
+      "height": 391
+    }
+  ],
+  "legacy": []
+}

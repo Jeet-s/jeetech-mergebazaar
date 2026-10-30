@@ -1,0 +1,11 @@
+{
+  "_note": "Store screenshot scenes. Each id is opened with <scheme>://shot/<id> and captured on an emulator (src/screenshots.tsx renders the real screens in that state). 'home' is the title screen.",
+  "scenes": [
+    { "id": "home", "caption": "Restore Dadi's festival home" },
+    { "id": "merge", "caption": "Merge lamps, silks and spices" },
+    { "id": "finale", "caption": "Clever, cozy festival puzzles" },
+    { "id": "restore", "caption": "Decorate every room your way" },
+    { "id": "win", "caption": "64 handcrafted festival levels" },
+    { "id": "map", "caption": "Five festivals to light up" }
+  ]
+}
